@@ -15,6 +15,7 @@ from datetime import datetime
 from app.api.campaigns_new import router as campaigns_router
 from app.api.contacts_new import router as contacts_router
 from app.api.messages_new import router as messages_router
+from app.api.contact_import import router as contact_import_router
 
 # Configure logging
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
@@ -48,6 +49,7 @@ async def root():
             "campaigns": "/api/campaigns/",
             "contacts": "/api/contacts/",
             "messages": "/api/messages/",
+            "contact_import": "/api/campaigns/{campaign_id}/contacts/import/",
             "health": "/health",
             "docs": "/docs"
         }
@@ -68,6 +70,7 @@ async def health():
 app.include_router(campaigns_router, prefix="/api", tags=["Campaigns"])
 app.include_router(contacts_router, prefix="/api", tags=["Contacts"])
 app.include_router(messages_router, prefix="/api", tags=["Messages"])
+app.include_router(contact_import_router, prefix="/api", tags=["Contact Import"])
 
 # Error handlers
 @app.exception_handler(404)
