@@ -1,0 +1,22 @@
+{
+  "event_id": "event_1751510506145",
+  "event_type": "rccommand",
+  "event_name": "ready",
+  "profile_url": null,
+  "dux_user_id": "117833704731893145427",
+  "timestamp": "2025-07-02 19:41:46.145072",
+  "raw_data": {
+    "userid": "117833704731893145427",
+    "time": "2025-07-03T02:41:45.304Z",
+    "type": "rccommand",
+    "event": "ready",
+    "data": {
+      "clientid": "aec37b35-3d0d-4b95-875c-3a578adc0d1a",
+      "exclusions": {
+        "commands": [],
+        "campaigns": []
+      }
+    }
+  },
+  "processed": false
+}

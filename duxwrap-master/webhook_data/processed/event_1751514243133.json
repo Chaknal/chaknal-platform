@@ -1,0 +1,141 @@
+{
+  "event_id": "event_1751514243133",
+  "event_type": "visit",
+  "event_name": "create",
+  "profile_url": null,
+  "dux_user_id": "117833704731893145427",
+  "timestamp": "2025-07-02 20:44:03.133052",
+  "raw_data": {
+    "userid": "117833704731893145427",
+    "time": "2025-07-03T03:44:02.695Z",
+    "type": "visit",
+    "event": "create",
+    "data": {
+      "id": "id.78375981",
+      "VisitTime": 1751514241829,
+      "Profile": "https://www.linkedin.com/in/kyle-c-5792b822",
+      "SalesProfile": "https://www.linkedin.com/sales/lead/ACwAAASr7C0BhvrgUa9FCoRi0IF1EbpMEZWGqBE,NAME_SEARCH,eNwJ",
+      "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACwAAASr7C0BhvrgUa9FCoRi0IF1EbpMEZWGqBE",
+      "Picture": "https://media.licdn.com/dms/image/v2/C4D03AQFz67aLAZVObQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516968683057?e=1756944000&v=beta&t=UQZ7hwOyieFzhDl4otIe6RehrSBDPHO5fOAz3HG17cA",
+      "Degree": "1",
+      "First Name": "Kyle",
+      "Middle Name": "Cohne",
+      "Last Name": "Cissp",
+      "Connections": "483",
+      "Summary": "Experienced Network Security Analyst with a demonstrated history of working in the philanthropy industry. Skilled in VMware ESX, Domain Name System (DNS), Windows Server, Networking, and Cisco Systems Products. Strong information technology professional with certifications in networking and information security.",
+      "From": "2024",
+      "Title": "Information Technology Security Manager",
+      "Company": "Conrad N. Hilton Foundation",
+      "CompanyProfile": "https://www.linkedin.com/company/616194/",
+      "CompanyWebsite": "http://www.hiltonfoundation.org",
+      "Email": "",
+      "Phone": "",
+      "IM": "",
+      "Twitter": "",
+      "Location": "Los Angeles County, California, United States",
+      "Industry": "Non-profit Organizations",
+      "My Tags": [],
+      "extended": {
+        "positions": [
+          {
+            "Company": "Conrad N. Hilton Foundation",
+            "Title": "Information Technology Security Manager",
+            "Description": "",
+            "From": "1 - 2024",
+            "To": ""
+          },
+          {
+            "Company": "Conrad N. Hilton Foundation",
+            "Title": "Senior Information Technology Security Analyst",
+            "Description": "",
+            "From": "6 - 2021",
+            "To": "1 - 2024"
+          },
+          {
+            "Company": "Conrad N. Hilton Foundation",
+            "Title": "Information Technology Security Analyst",
+            "Description": "",
+            "From": "6 - 2017",
+            "To": "6 - 2021"
+          },
+          {
+            "Company": "GameFly",
+            "Title": "Systems/Network Engineer",
+            "Description": "",
+            "From": "9 - 2013",
+            "To": "6 - 2017"
+          },
+          {
+            "Company": "Alpine Electronics of America, Inc.",
+            "Title": "Network Administrator",
+            "Description": "",
+            "From": "7 - 2010",
+            "To": "9 - 2013"
+          },
+          {
+            "Company": "Tarzana Treatment Center",
+            "Title": "Network Administrator II",
+            "Description": "",
+            "From": "2 - 2007",
+            "To": "7 - 2010"
+          }
+        ],
+        "skills": [
+          "Cisco Technologies",
+          "DNS",
+          "Windows Server",
+          "VPN",
+          "DHCP",
+          "Microsoft Exchange",
+          "Active Directory",
+          "Cisco IOS",
+          "TCP/IP",
+          "VMware ESX",
+          "OSPF",
+          "EIGRP",
+          "RIP",
+          "LAN-WAN",
+          "Cisco Call Manager",
+          "Technical Support",
+          "Windows",
+          "vSphere",
+          "Cisco Certified",
+          "Cisco NAC",
+          "Security+",
+          "Networking",
+          "CCNP",
+          "Security",
+          "Routing",
+          "Antivirus",
+          "Cisco Systems Products",
+          "Switching"
+        ],
+        "schools": [
+          {
+            "Name": "Mt. Sierra College",
+            "Degree": "Bachelor of Science in Multimedia Design Technology",
+            "Field": "Web Design",
+            "From": "2001",
+            "To": "2005"
+          },
+          {
+            "Name": "Collins College",
+            "Degree": "Associate of Arts in Visual Communications",
+            "Field": "",
+            "From": "1996",
+            "To": "1998"
+          },
+          {
+            "Name": "Certifications",
+            "Degree": "",
+            "Field": "",
+            "From": "",
+            "To": ""
+          }
+        ]
+      },
+      "My Notes": []
+    }
+  },
+  "processed": false
+}

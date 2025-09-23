@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Test</title>
+</head>
+<body>
+    <h1>Agency User Test</h1>
+    <div id="test-results"></div>
+    
+    <script>
+        // Test the agency logic
+        function testAgencyLogic() {
+            const testEmails = [
+                'sercio@chaknal.com',
+                'sercio@ampedmktg.com', 
+                'user@chaknal.com'
+            ];
+            
+            const results = [];
+            
+            testEmails.forEach(email => {
+                // Set the email in localStorage
+                localStorage.setItem('user_email', email);
+                
+                // Test the agency logic (same as in our frontend)
+                const is_agency = email === 'sercio@chaknal.com' || email === 'sercio@ampedmktg.com' || email === 'user@chaknal.com';
+                const role = (email === 'sercio@chaknal.com' || email === 'sercio@ampedmktg.com' || email === 'user@chaknal.com') ? 'agency' : "user";
+                
+                results.push(`
+                    <div style="margin: 10px 0; padding: 10px; border: 1px solid #ccc;">
+                        <strong>Email:</strong> ${email}<br>
+                        <strong>is_agency:</strong> ${is_agency}<br>
+                        <strong>role:</strong> ${role}<br>
+                        <strong>Should show agency features:</strong> ${is_agency ? '✅ YES' : '❌ NO'}
+                    </div>
+                `);
+            });
+            
+            document.getElementById('test-results').innerHTML = results.join('');
+        }
+        
+        // Run test when page loads
+        testAgencyLogic();
+    </script>
+</body>
+</html>

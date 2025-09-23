@@ -1,0 +1,19 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T02:27:39.268Z",
+  "type": "action",
+  "event": "completed",
+  "data": {
+    "name": "messageProfile",
+    "targeturl": "https://www.linkedin.com/in/sergio-campos-97b9b7362/?lipi=urn%3Ali%3Apage%3Afeed_index_index%3Baf158990-ee70-47a6-8f55-18fc17ccaad0",
+    "profileid": "id.1513388975",
+    "params": {
+      "profileid": "id.1513388975",
+      "campaignid": "Testing a message sent ",
+      "actionindex": 0,
+      "attempt": 1,
+      "messagetext": "goodbye"
+    },
+    "successflag": true
+  }
+}

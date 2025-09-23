@@ -1,0 +1,22 @@
+{
+  "event_id": "event_1751508399921",
+  "event_type": "action",
+  "event_name": "completed",
+  "profile_url": "https://www.linkedin.com/in/sergio-campos/",
+  "dux_user_id": "test_user_123",
+  "timestamp": "2025-07-02 19:06:39.921540",
+  "raw_data": {
+    "type": "action",
+    "event": "completed",
+    "profile": "https://www.linkedin.com/in/sergio-campos/",
+    "userid": "test_user_123",
+    "data": {
+      "action": "connect",
+      "status": "success",
+      "targeturl": "https://www.linkedin.com/in/sergio-campos/",
+      "timestamp": 1751508399919
+    },
+    "timestamp": 1751508399919
+  },
+  "processed": false
+}

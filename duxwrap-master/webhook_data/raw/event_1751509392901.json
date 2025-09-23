@@ -1,0 +1,197 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T02:23:12.304Z",
+  "type": "visit",
+  "event": "create",
+  "data": {
+    "id": "id.143167973",
+    "VisitTime": 1751509391438,
+    "Profile": "https://www.linkedin.com/in/kevinfordcs",
+    "SalesProfile": "https://www.linkedin.com/sales/lead/ACwAAAiIkeUBZC00sSW2U1i45V-vCWxMVKa_XBI,NAME_SEARCH,X3fu",
+    "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACwAAAiIkeUBZC00sSW2U1i45V-vCWxMVKa_XBI",
+    "Picture": "https://media.licdn.com/dms/image/v2/D5603AQFBR7hSYf9Byw/profile-displayphoto-scale_400_400/B56ZevcmiAHQAg-/0/1750995200587?e=1756944000&v=beta&t=WtJaWuZiemNnBAlHxi-d5UZ7r81SZuFiOEbiv65IoUs",
+    "Degree": "1",
+    "First Name": "Kevin",
+    "Middle Name": "",
+    "Last Name": "Ford",
+    "Connections": "13924",
+    "Summary": "Accomplished Technology, cybersecurity, and privacy leader with a strong emphasis on innovation and strategic vision. I bring specialized knowledge in DevSecOps, Cloud Security, Automation, and Agile Development Methodologies.\n\nSpecialized Knowledge: Expert in secure engineering practices, security automation, quantitative cyber risk modeling, and organizational risk management.\n\nSkill Set: Proficient in cloud security, network security, SIEM, SOAR, identity and access management, encryption, continuous monitoring tools, and configuration management tools.\n\nRegulatory Framework and Governance Knowledge: Knowledgeable in GDPR, CCPA, PCI DSS, HIPAA, NIST RMF, NIST CSF, NIST SP 171, FedRAMP, ISO 27k series, COBIT, and SOC 2.",
+    "From": "2021",
+    "Title": "Chief Information Security Officer",
+    "Company": "Esri",
+    "CompanyProfile": "https://www.linkedin.com/company/5311/",
+    "CompanyWebsite": "https://www.esri.com/en-us/about/about-esri",
+    "Email": "kford@esri.com",
+    "Phone": "(909) 369-2306",
+    "IM": "",
+    "Twitter": "",
+    "Location": "Los Angeles Metropolitan Area",
+    "Industry": "Software Development",
+    "My Tags": [],
+    "extended": {
+      "positions": [
+        {
+          "Company": "Esri",
+          "Title": "Chief Information Security Officer",
+          "Description": "",
+          "From": "9 - 2021",
+          "To": ""
+        },
+        {
+          "Company": "North Dakota Information Technology Department (ITD)",
+          "Title": "Chief Information Security Officer",
+          "Description": "\u2022Implement cutting edge operational processes and  sound governance for one of the largest public networks in the nation.\n\u2022 Advise and oversee cybersecurity strategy for the State of North Dakota.   \n\u2022 Establish modern processes and bleeding edge tech to out-pace, out-focus, and out-smart the enemy. \n\u2022 Lead a top notch team of cyber warriors that strives to enable and protect the people of North Dakota in everything we do.",
+          "From": "11 - 2019",
+          "To": "10 - 2021"
+        },
+        {
+          "Company": "CyberGRX",
+          "Title": "Chief Information Security Officer",
+          "Description": "\u2022\tPromote a culture of security and privacy that exemplifies the value of the business. \n\u2022\tProtect company value while enabling massive scaling of enterprise information systems. \n\u2022\tDevelop an innovative company-wide cyber and privacy risk management architecture.",
+          "From": "9 - 2018",
+          "To": "12 - 2019"
+        },
+        {
+          "Company": "CyberGRX",
+          "Title": "Director Of Assessment",
+          "Description": "\u2022\tLead team of security and privacy experts in tackling third-party cyber and privacy risk for some of the largest companies in the world.\n\u2022\tDeveloped product workflows and content for automating security compliance and risk assessments.\n\u2022\tWork with industry partners to develop cutting edge risk management solutions for high value customers.",
+          "From": "1 - 2017",
+          "To": "9 - 2018"
+        },
+        {
+          "Company": "Genex Systems",
+          "Title": "NIST Cybersecurity Framework Development Team",
+          "Description": "\u2022\tAggregate and analyze stakeholder feedback to determine potential updates to the NIST Cybersecurity Framework including implementation guidance, enterprise cyber risk management guidance, and privacy and civil liberties guidance. \n\u2022\tResearch and develop recommendations for critical infrastructure sector guidance for leveraging the NIST Cybersecurity Framework. \n\u2022\tDevelop risk management methodologies and implementation guidance for inclusion in the Cybersecurity Framework.\n",
+          "From": "2016",
+          "To": "2017"
+        },
+        {
+          "Company": "Genex Systems",
+          "Title": "NASA - Master Information Assurance and Security Specialist ",
+          "Description": "\u2022\tConsulted NASA regarding secure system engineering and design for agency wide research initiatives.\n\u2022\tDeveloped guidance for the integrity and availability of signal for unique operational research systems (SCADA/ICS) with meaningful physical interactions.\n\u2022\tEarned NASA Achievement Award for security engineering and risk analysis for advanced network solutions to enable rapid, long distance, prototyping and design.\n\u2022\tDeveloped risk-based cloud security assessment methodologies and cloud reference architectures.\n\u2022\tDevelop system security plans for major information systems and unique operational and research systems based on NIST Risk Management Framework and Cybersecurity Framework methodologies. \n\u2022\tConduct security process development and improvement for NASA research and operational systems, including ICS, SCADA, and unique cyber\u2010physical systems. \n\u2022\tConsult with chief security officers, OCIO managers, and leadership to help build automated continuous monitoring and assessment methodologies.  \n\u2022\tCoordinate the implementation of Fedramp System Security Plans.",
+          "From": "2015",
+          "To": "2017"
+        },
+        {
+          "Company": "Deloitte",
+          "Title": "U.S. House of Representatives - Cyber Policy Development",
+          "Description": "\u2022\tRedesign cybersecurity policy and architecture for the U.S. House of Representatives.\n\u2022\tEstablish policy development, review, and change program inclusive of security subject matter experts and organizational stakeholders.\n\u2022\tLeverage industry best practices and risk management methodologies to identify gaps and required updates for House of Representatives security program.\n\u2022\tDevelop guidance to address gaps and modernize House of Representatives cyber policy.\n\u2022\tWork with House of Representatives staff to ensure written policies are integrated within operational environment.",
+          "From": "2014",
+          "To": "2015"
+        },
+        {
+          "Company": "Deloitte",
+          "Title": "HHS - Cybersecurity Process Improvement",
+          "Description": "\u2022\tAssessed security posture and administrative controls associated with Indian Health Center financial and mixed medical systems based on FISCAM, FISMA, and OMB guidance.\n\u2022\tDeveloped control assessment methodologies for financial and mixed medical systems within the Indian Health Service and tested controls to ensure compliance with the Federal Financial Management Improvement Act of 1996.\n\u2022\tProduced documentation of internal controls consistent with federal requirements for Chief Information Officers within federal agencies.",
+          "From": "2014",
+          "To": "2014"
+        },
+        {
+          "Company": "Deloitte",
+          "Title": "NIST Cybersecurity Framework Development",
+          "Description": "\u2022\tDeveloped enterprise risk management models and cyber risk management models to demonstrate interoperability between granular business/mission risk mitigation strategies and high-level enterprise risk management.\n\u2022\tWrote and edited guidance for implementation of the Cybersecurity Framework within the organization.\n\u2022\tPartnered with subject matter experts and industry leaders to identify and enumerate fundamental cybersecurity concepts, activities, and controls.",
+          "From": "2013",
+          "To": "2014"
+        },
+        {
+          "Company": "University of Maryland",
+          "Title": "Assistantship",
+          "Description": "\u2022Assistantship while pursuing further education",
+          "From": "7 - 2010",
+          "To": "9 - 2012"
+        },
+        {
+          "Company": "Prince Books",
+          "Title": "IT Specialist",
+          "Description": "\u2022 Responsible for upkeep of IT including point of sale, network, and information systems.\n\u2022 Developed and maintained Drupal based website.  ",
+          "From": "8 - 2009",
+          "To": "8 - 2010"
+        },
+        {
+          "Company": "Pathways of Southern Maryland",
+          "Title": "HIPAA Compliance Support Staff/TAY Program ",
+          "Description": "\u2022 Prepared and managed Protected Health Information (PHI) and Electronic Protected Health Information  in preparation for  HIPAA compliance audits\n\u2022 Worked directly with consumers to ensure appropriate health outcomes and correct management of case records",
+          "From": "8 - 2006",
+          "To": "5 - 2009"
+        }
+      ],
+      "skills": [
+        "Information Technology",
+        "Security Management",
+        "Leadership",
+        "Cybersecurity",
+        "DevSecOps",
+        "Program Management",
+        "Information Security",
+        "Technical Writing",
+        "Academic Writing",
+        "Risk Management",
+        "HIPAA",
+        "Strategic Planning",
+        "Event Planning",
+        "Editing",
+        "Research",
+        "Project Management",
+        "Project Planning",
+        "HITECH",
+        "Security",
+        "Analysis",
+        "Management Consulting",
+        "Enterprise Risk Management",
+        "Business Process Improvement",
+        "Information Assurance",
+        "Scrum",
+        "Agile Project Management",
+        "kanban",
+        "Network Security",
+        "Payment Card Industry Data Security Standard (PCI DSS)",
+        "Cloud Computing",
+        "Policy",
+        "Microsoft Office",
+        "WordPress",
+        "Teaching",
+        "Public Speaking",
+        "Training",
+        "Management",
+        "Computer Security",
+        "Process Improvement",
+        "FISMA",
+        "Documentary Research",
+        "Governance",
+        "NIST",
+        "Cloud Security"
+      ],
+      "schools": [
+        {
+          "Name": "University of Maryland Global Campus",
+          "Degree": "Master of Science (M.S.)",
+          "Field": "Cybersecurity Policy and Leadership",
+          "From": "2012",
+          "To": "2014"
+        },
+        {
+          "Name": "University of Maryland College Park",
+          "Degree": "Bachelor's degree",
+          "Field": "History",
+          "From": "1999",
+          "To": "2004"
+        },
+        {
+          "Name": "University of Maryland College Park",
+          "Degree": "Bachelor's degree",
+          "Field": "Philosophy",
+          "From": "1999",
+          "To": "2004"
+        },
+        {
+          "Name": "St. Mary's College of Maryland",
+          "Degree": "",
+          "Field": "Music Composition",
+          "From": "2008",
+          "To": ""
+        }
+      ]
+    },
+    "My Notes": []
+  }
+}

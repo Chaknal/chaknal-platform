@@ -1,0 +1,1 @@
+# Chaknal Platform FastAPI Application

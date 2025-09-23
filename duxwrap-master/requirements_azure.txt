@@ -1,0 +1,17 @@
+# Azure PostgreSQL Database Dependencies
+psycopg2-binary==2.9.7
+python-dotenv==1.0.0
+
+# Web Framework (for webhook server)
+Flask==2.3.3
+requests==2.31.0
+
+# Data Processing
+python-dateutil==2.8.2
+
+# Optional: Azure SDK (for future Azure service integration)
+# azure-identity==1.15.0
+# azure-keyvault-secrets==4.7.0
+
+# Additional dependencies for Azure App Service deployment
+gunicorn==21.2.0 

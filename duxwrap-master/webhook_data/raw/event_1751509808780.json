@@ -1,0 +1,31 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T02:30:08.348Z",
+  "type": "message",
+  "event": "sent",
+  "data": {
+    "url": "https://www.linkedin.com/messaging/thread/2-NWI2MGVjZmItYWVjYS00NmJjLWFiOWYtYThmYzMwZWQyOTczXzEwMA==/",
+    "timestamp": "2025-07-03T02:27:23.567Z",
+    "type": "MEMBER_TO_MEMBER",
+    "text": "goodbye",
+    "to": "https://www.linkedin.com/in/ACoAAFo0e68BEDr2GROQQH4fKCau2QmHFE0C2-Y",
+    "toId": "id.1513388975",
+    "toFirstName": "Sergio",
+    "toLastName": "Campos",
+    "tags": [
+      "AMPED",
+      "\ud83e\udd86-default-followup-1",
+      "\ud83e\udd86-default-followup-2",
+      "\ud83e\udd86-default-followup-3",
+      "\ud83e\udd86-default-followup-4",
+      "\ud83e\udd86-default-followup-5",
+      "\ud83e\udd86-default-followup-6",
+      "\ud83e\udd86-default-followup-7",
+      "\ud83e\udd86-default-followup-8",
+      "\ud83e\udd86-testing a message sent -enrolled",
+      "testing a message sent",
+      "\ud83e\udd86-testing a message sent -accepted",
+      "\ud83e\udd86-Testing a message sent -followup-1"
+    ]
+  }
+}

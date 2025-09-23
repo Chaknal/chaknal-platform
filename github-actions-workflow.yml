@@ -1,0 +1,75 @@
+name: Deploy Chaknal Platform to Azure
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+env:
+  AZURE_WEBAPP_NAME: chaknal-backend-container
+  AZURE_WEBAPP_PACKAGE_PATH: '.'
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Run tests (if any)
+      run: |
+        # Add your test commands here
+        echo "Running tests..."
+        # python -m pytest tests/ || true
+        
+    - name: Create deployment package
+      run: |
+        # Create a deployment package
+        zip -r chaknal-deployment.zip . -x "*.git*" "*.github*" "*.pyc" "__pycache__/*" "*.log" "*.db" "*.zip" "node_modules/*" "*.venv*" "chaknal-venv/*"
+        
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        
+    - name: Deploy to Azure App Service
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        package: chaknal-deployment.zip
+        startup-command: 'python -m uvicorn app.main:app --host 0.0.0.0 --port 8000'
+        
+    - name: Configure App Settings
+      run: |
+        az webapp config appsettings set --name ${{ env.AZURE_WEBAPP_NAME }} --resource-group chaknal-platform --settings \
+          ENVIRONMENT=production \
+          LOG_LEVEL=INFO \
+          DATABASE_URL="postgresql+asyncpg://chaknal_user:Chaknal2025!@chaknal-postgres.postgres.database.azure.com:5432/chaknal_db" \
+          SECRET_KEY="your-super-secret-key-here-change-in-production" \
+          CORS_ORIGINS="https://app.chaknal.com,https://platform.chaknal.com,https://agreeable-bush-01890e00f.1.azurestaticapps.net" \
+          WEBSITES_PORT=8000
+          
+    - name: Restart App Service
+      run: |
+        az webapp restart --name ${{ env.AZURE_WEBAPP_NAME }} --resource-group chaknal-platform
+        
+    - name: Health Check
+      run: |
+        echo "Waiting for app to start..."
+        sleep 30
+        curl -f https://${{ env.AZURE_WEBAPP_NAME }}.azurewebsites.net/health || exit 1
+        echo "Deployment successful!"

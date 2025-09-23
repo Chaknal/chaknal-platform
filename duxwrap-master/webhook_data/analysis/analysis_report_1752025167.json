@@ -1,0 +1,94 @@
+{
+  "summary": {
+    "total_events": 3,
+    "unique_event_types": 3,
+    "unique_profiles": 1,
+    "time_range": {
+      "first_event": "2025-07-08T18:39:08.782115",
+      "last_event": "2025-07-08T18:39:10.879954",
+      "total_events": 3
+    }
+  },
+  "event_type_breakdown": {
+    "visit.completed": 1,
+    "connect.sent": 1,
+    "message.received": 1
+  },
+  "profile_activity": {
+    "https://www.linkedin.com/in/brianbirkett/": 3
+  },
+  "data_structure_analysis": {
+    "common_fields": [
+      "event",
+      "timestamp",
+      "profile",
+      "userid",
+      "type",
+      "data",
+      "api_key"
+    ],
+    "field_types": {
+      "type": [
+        "str"
+      ],
+      "event": [
+        "str"
+      ],
+      "profile": [
+        "str"
+      ],
+      "userid": [
+        "str"
+      ],
+      "api_key": [
+        "str"
+      ],
+      "data": [
+        "dict"
+      ],
+      "timestamp": [
+        "int"
+      ]
+    },
+    "sample_event_structure": {
+      "type": "visit",
+      "event": "completed",
+      "profile": "https://www.linkedin.com/in/brianbirkett/",
+      "userid": "117833704731893145427",
+      "api_key": "e96sH0Qehcqk8LWsyNjJpr9OL9qzasXR",
+      "data": {
+        "action": "visit",
+        "status": "success",
+        "targeturl": "https://www.linkedin.com/in/brianbirkett/",
+        "timestamp": 1752025148779,
+        "profile_info": {
+          "name": "Brian Birkett",
+          "headline": "LinkedIn Profile",
+          "location": "Unknown"
+        }
+      },
+      "timestamp": 1752025148779
+    }
+  },
+  "recommendations": {
+    "database_tables": [
+      {
+        "name": "messages",
+        "description": "Store message events from Dux-Soup",
+        "key_fields": [
+          "event_id",
+          "profile_url",
+          "event_type",
+          "timestamp"
+        ]
+      }
+    ],
+    "field_mappings": {},
+    "indexes": [
+      "CREATE INDEX idx_events_profile_url ON events(profile_url)",
+      "CREATE INDEX idx_events_timestamp ON events(timestamp)",
+      "CREATE INDEX idx_events_type ON events(event_type)"
+    ],
+    "constraints": []
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "event_id": "event_1751514301035",
+  "event_type": "visit",
+  "event_name": "create",
+  "profile_url": null,
+  "dux_user_id": "117833704731893145427",
+  "timestamp": "2025-07-02 20:45:01.035170",
+  "raw_data": {
+    "userid": "117833704731893145427",
+    "time": "2025-07-03T03:45:00.119Z",
+    "type": "visit",
+    "event": "create",
+    "data": {
+      "id": "id.4155728",
+      "VisitTime": 1751514299253,
+      "Profile": "https://www.linkedin.com/in/rafael-a-linares-cism-cissp-itil-lss-b284841",
+      "SalesProfile": "https://www.linkedin.com/sales/lead/ACwAAAA_aVABRijdvd3BhR1dUUtYMYvasN2i6xA,NAME_SEARCH,kgb-",
+      "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACwAAAA_aVABRijdvd3BhR1dUUtYMYvasN2i6xA",
+      "Picture": "https://media.licdn.com/dms/image/v2/D5603AQFkZn4g5JmS6A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1707780832117?e=1756944000&v=beta&t=KB2bJNs40LSoRojDbe1VlC0S_3j0-PKL5Kf8Wff-Vf0",
+      "Degree": "1",
+      "First Name": "Rafael",
+      "Middle Name": "Linares Cism Cissp Itil",
+      "Last Name": "Lss",
+      "Connections": "3224",
+      "Summary": "Unique blend of Technical and Business acumen, with a successful track record of delivering strong enterprise Cybersecurity, Privacy, and Compliance capabilities.  Progressive experience in large, multinational organizations, deploying scalable, secure technical infrastructures to meet current/future capacity, and functional needs.  \n\nDISTINCTIVE EXECUTIVE QUALIFICATIONS\n\nApplies strategic and tactical skills to lead large mission-critical projects involving diverse technical configurations, technologies and processing environments.  Leverages general business savvy to understand an organization\u2019s security and operational needs, establish achievable technology direction and platform strategies, and lead cross-geography, multi-functional teams in the execution of solutions.  Ability to present technical information in a manner that establishes clear understanding for both technical and non-technical colleagues and customers.  \n\nBUSINESS VALUE / ROI\n\nProven ability to: (1) Provide leadership for development and implementation of enterprise cybersecurity, privacy, and compliance programs and collaboration architecture frameworks to gain higher levels of integration between various line-of-business applications; (2) Serve as a technical lead, technology champion and change agent, harnessing internal and external resources to maximize corporate competitiveness and keep pace with overall growth of business; (3) Build and motivate top-caliber teams, setting expectations, measuring performance, and facilitating staff training and skill development to maximize results.",
+      "From": "2023",
+      "Title": "Principal Consultant & Chief Information Security Officer",
+      "Company": "Datanetiix Solutions Inc.",
+      "CompanyProfile": "https://www.linkedin.com/company/13655506/",
+      "CompanyWebsite": "http://datanetiix.com/",
+      "Email": "plnrfl@netscape.net",
+      "Phone": "(818) 936-8379",
+      "IM": "",
+      "Twitter": "",
+      "Location": "Los Angeles, California, United States",
+      "Industry": "IT Services and IT Consulting",
+      "My Tags": [],
+      "extended": {
+        "positions": [
+          {
+            "Company": "Datanetiix Solutions Inc.",
+            "Title": "Principal Consultant & Chief Information Security Officer",
+            "Description": "Provided Information Security subject matter expertise to help organizations establish/maintain a comprehensive information protection plan to meet their cybersecurity goals, privacy, and compliance requirements.  \n\nProvided full life cycle Information Security services including annual risk assessments, quarterly VAPT (Vulnerability Assessments and Penetration Testing), risk management, business continuity and Disaster Recovery plans.  \n\nSpearheaded incident response planning and execution, and security architecture and design.",
+            "From": "3 - 2023",
+            "To": ""
+          },
+          {
+            "Company": "County of Orange",
+            "Title": "Chief Information Security Officer",
+            "Description": "Designed, implemented, and maintained countywide information security programs focused on protecting the confidentiality, integrity, and availability of business applications, computer infrastructure, and their associated information assets. Provided strategic and operational leadership for Cybersecurity, privacy, and compliance across the County\u2019s 26 agencies in support of 34 cities and 18,000 employees, and served 3.5 million residents.  Established a 24X7 Security Operations Center (SOC) capability with the required technology, people, and processes to effectively monitor the County\u2019s critical infrastructure.  Implemented threat intelligence and security incident response competencies and established a comprehensive set of Cybersecurity polices countywide.",
+            "From": "11 - 2018",
+            "To": "3 - 2023"
+          },
+          {
+            "Company": "Datanetiix",
+            "Title": "Principal and Chief Information Security Officer",
+            "Description": "Provide Information Security subject matter expertise to help small, medium, and large organizations establish and maintain a comprehensive information protection plan with the necessary controls to meet their organizational objectives, regulatory compliance requirements, and address their identified risks and vulnerabilities. \nFull life cycle Information Security services including complete hands-on day-to-day security function, Security Operations, annual risk assessments and treatment, quarterly VAPT testing, third party risk management and full business continuity and Disaster Recovery plans, as well as complete incident response planning and execution, and security architecture and design. \n",
+            "From": "2 - 2018",
+            "To": "11 - 2018"
+          },
+          {
+            "Company": "Zurich Insurance Company Ltd (Farmers prior to 2017)",
+            "Title": "Vice President Infrastructure Security Architecture & Operations (Head)",
+            "Description": "Executive level information security role, responsible for architectural design of Infrastructure security solutions across Zurich\u2019s worldwide enterprise. Delivered infrastructure security architecture subject matter expertise through independent project engagements and collaboration with business and technology partners as well as external technology providers for effective design of security capabilities for the organization. Also, provided security technologies support and maintenance as part of my security technology operations role after security capabilities were architected and deployed.",
+            "From": "9 - 2014",
+            "To": "7 - 2017"
+          },
+          {
+            "Company": "20th Century Fox",
+            "Title": "Senior Director Information Technology",
+            "Description": "Senior Director \u2013 Information Technology\nSenior IT leadership position, responsible for worldwide Information Security program for data center operations and infrastructure, supporting the entire Fox IT network, which consists of thousands of network devices, servers, storage components, WIFI access points and critical content delivery systems and applications in over 125 worldwide locations. Focused on continuous improvement and partnered with peers and other IT leaders throughout the enterprise to maintain an effective balance of system/application controls and alerts.  Led the establishment of a hybrid cloud architecture to effectively support business growth. Managed a team of 67 technology professionals, including five direct reports, and an offshore team in India.  \n\n\n\u2022\tEstablished a Secured Future Architecture and Reduced Global Data Center Footprint.  Led a Data center transformation program to reduce global data center footprint, refreshed servers using virtualization, set up a failover data center. Established a private/public cloud offering using HP\u2019s Matrix Operating Environment (MOE).   STRATEGIC IMPACT:  Established a state-of-the-art, Tier IV, Secured data center infrastructure at what is arguably the most advanced data center co-location facility in the world (Switch) in Las Vegas, Nevada in support of Fox\u2019s strategic entertainment technology based vision.  \n\n\u2022\tPeople, Process and Technology improvements.  Restructured global Information Security team and optimized team talent portfolio within first 12 months. Defined two-year systems renovation plan to drive down Operational Expenses, improve reliability, and security. Built a high performing organization and secured technology infrastructure that can support Fox's growing portfolio of products and services\n\n",
+            "From": "1 - 2013",
+            "To": "7 - 2014"
+          },
+          {
+            "Company": "Fresh and Easy Neighborhood Market (Tesco)",
+            "Title": "Senior Director \u2013 Global IT Infrastructure, Operations and Security",
+            "Description": "Highly visible leadership role, directing and overseeing resources for the architecture, implementation, and maintenance of technology infrastructure, including networks, data centers, servers, desktops, service desk and vendors to ensure that all systems are available, reliable, secure and stable.  Led initial mission of building an entire information technology infrastructure from ground up, supporting a $2B US operation.  Managed a team of 50 technology professionals, including six direct reports and an offshore team in India.Focus on (i.) Leveraging technology as a business enabler and backbone for continuous improvement, to ensure  cost effectiveness and optimal quality, service reliability, and customer satisfaction; (ii.) Identifying and assessing emerging technologies and vendor landscape to strengthen business competitiveness; (iii.) Developing and implementing standards and strategy for enterprise-wide Disaster Recovery and Business Continuity Plan. \u2022 Built a Robust and Resilient IT Infrastructure from Ground Up.  Provided technology leadership based on    keen understanding of strategic priorities and the ability to anticipate the Company\u2019s current and future requirements.  STRATEGIC IMPACT:  Established state-of-the-art, secured, IT infrastructure, enabling successful rollout, support and on-going maintenance of over 200 Tesco Fresh and Easy stores in the US (Arizona, California, and Nevada), as well as 3 manufacturing plants and 2 distribution centers.  \u2022Maximized Operational Efficiency and Business Agility.  Established IT offshore support model in India to effectively monitor and manage the global network, including required staffing, 24/7 Help Desk and Network Operations Center, change and configuration management systems, and disciplined processes.  STRATEGIC IMPACT:  Support model provides 3:1 ratio in technology resources, delivering $2.5M + savings in annual staff costs.  Highly successful platform has become a Tesco benchmark in foreign sites.",
+            "From": "7 - 2006",
+            "To": "8 - 2012"
+          },
+          {
+            "Company": "ING",
+            "Title": "Director, IT Infrastructure",
+            "Description": "Executed corporate information systems architecture roadmap and coordinated infrastructure initiatives across all business units within the US.  Focus on (i.) Leading operational maintenance of corporate IT ecosystem, including servers, storage, databases, network, and telecommunication components; (ii.) Investigating, researching, and recommending flexible solutions to meet operational objectives; (iii.) Implementing policies and procedures for Security, Problem, Change and Asset Management, as well as Disaster Recovery and Business Continuity plan; (iv.) Delivering infrastructure projects on-time and on-schedule, leveraging IT project management framework. Established a state of the art, secured, IT infrastructure to ensure 24X7 availability of computer resources to successfully support our business units.\n\n\u2022Established policies and procedures for ITIL based framework including security, problem, change and asset management.  \n\n\u2022Successfully executed project CIA (Confidentiality, Integrity and Availability). This project driven primarily by regulatory requirements such as Sarbanes Oxley, the Securities and Exchange Commission (SEC), and others, focused on reviewing and remediation of systems, networks and applications from a security perspective.  \n\n\u2022Completed the design and implementation of a well-equipped, Secured, Network Operations Center (NOC) to effectively monitor and manage our Cisco based network. \n\n\u2022Replaced an old outdated phone system with a new Avaya enterprise server to effectively support our business growth.\n\n\u2022Established a Disaster Recovery and Business continuity plan.",
+            "From": "2000",
+            "To": "2006"
+          }
+        ],
+        "skills": [
+          "Compliance Management",
+          "Privacy Compliance",
+          "Cybersecurity ",
+          "Vendor Management",
+          "IT Service Management",
+          "ITIL",
+          "Data Center",
+          "Cisco Technologies",
+          "Project Management",
+          "Security",
+          "Troubleshooting",
+          "Infrastructure",
+          "Enterprise Architecture",
+          "IT Management",
+          "Incident Management",
+          "System Administration",
+          "Service Delivery",
+          "Telecommunications",
+          "Servers",
+          "Disaster Recovery",
+          "Integration",
+          "Business Analysis",
+          "Strategy",
+          "Active Directory",
+          "Team Management",
+          "Information Technology",
+          "Management",
+          "Networking",
+          "Project Portfolio Management",
+          "Storage",
+          "IT Operations",
+          "Enterprise Software",
+          "IT Strategy",
+          "Leadership",
+          "Cisco Systems Products"
+        ],
+        "schools": [
+          {
+            "Name": "University of Phoenix",
+            "Degree": "BSIT",
+            "Field": "Information Technology",
+            "From": "1999",
+            "To": "2004"
+          }
+        ]
+      },
+      "My Notes": []
+    }
+  },
+  "processed": false
+}

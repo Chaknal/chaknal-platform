@@ -1,0 +1,49 @@
+body {
+  background: #181A20;
+  color: #e0e0e0;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1 {
+  color: #00ffe7;
+  text-shadow: 0 0 8px #00ffe7, 0 0 16px #00ffe7;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  background: linear-gradient(90deg, #00ffe7 0%, #007cf0 100%);
+  color: #181A20;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 12px #00ffe7, 0 0 24px #007cf0;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #007cf0 0%, #00ffe7 100%);
+  box-shadow: 0 0 24px #00ffe7, 0 0 48px #007cf0;
+}
+
+a {
+  color: #00ffe7;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-top: 1.5rem;
+}

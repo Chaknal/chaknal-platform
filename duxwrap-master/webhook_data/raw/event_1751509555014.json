@@ -1,0 +1,18 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T02:25:54.263Z",
+  "type": "rccommand",
+  "event": "received",
+  "data": {
+    "id": "718525cc-8a67-640d785af98c",
+    "command": "message",
+    "params": {
+      "profile": "https://www.linkedin.com/in/sergio-campos-97b9b7362/",
+      "profileid": "id.1513388975",
+      "campaignid": "Testing a message sent ",
+      "actionindex": 0,
+      "attempt": 1,
+      "messagetext": "goodbye"
+    }
+  }
+}

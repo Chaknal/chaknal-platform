@@ -1,0 +1,34 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install basic dependencies
+RUN pip install fastapi uvicorn
+
+# Create a simple test app
+COPY <<EOF /app/main.py
+from fastapi import FastAPI
+import os
+
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {
+        "message": "Test container working!",
+        "database_url": os.getenv("DATABASE_URL", "Not set"),
+        "environment": os.getenv("ENVIRONMENT", "Not set")
+    }
+
+@app.get("/health")
+async def health():
+    return {"status": "healthy"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+EOF
+
+EXPOSE 8000
+
+CMD ["python", "main.py"]

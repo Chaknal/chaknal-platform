@@ -1,0 +1,122 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T03:42:34.310Z",
+  "type": "visit",
+  "event": "create",
+  "data": {
+    "id": "id.546815842",
+    "VisitTime": 1751514153764,
+    "Profile": "https://www.linkedin.com/in/prashanth-krishnamoorthy-42a164133",
+    "SalesProfile": "https://www.linkedin.com/sales/lead/ACwAACCXv2IBPw04m5sILy5HAjcLA0vxJL67MFA,NAME_SEARCH,kWob",
+    "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACwAACCXv2IBPw04m5sILy5HAjcLA0vxJL67MFA",
+    "Picture": "https://media.licdn.com/dms/image/v2/D5603AQFOhsi1aRWzNQ/profile-displayphoto-shrink_200_200/B56ZOgCv7SG8AY-/0/1733556896777?e=1756944000&v=beta&t=CrJ9H0Qr1xKjbx4iV2YCbekX-mELRASkp5PbFPRdR20",
+    "Degree": "1",
+    "First Name": "Prashanth",
+    "Middle Name": "",
+    "Last Name": "Krishnamoorthy",
+    "Connections": "1516",
+    "Summary": "Seasoned Senior Security Engineer with a distinguished 7-year track record specializing in Web Application Security, Vulnerability Management, Vendor Risk Management, and comprehensive Risk Assessment, Incident Response, Endpoint Security, Detection and Response and Penetration Testing. Proven expertise in developing and executing robust security strategies to fortify organizational defenses. Adept at fostering cross-functional collaboration, demonstrating excellent interpersonal skills to effectively engage with diverse teams and stakeholders. A results-oriented professional dedicated to achieving core business objectives through strategic security initiatives.\n\nAREAS OF EXPERTISE:\n\nVulnerability management\nApplication Security Assessment & Audits\nMobile application security \nThreat Intelligence/Endpoint Protection\nIncident detection response\nCase Management\nEndpoint Security \nSecurity Orchestration/Automation\nLog Management\nIdentity Management and Access control\nAWS, Azure\nSecurity assessments based on ISO 27000 frameworks, NIST, CCPA, GDPR, CSA, SOX, SOC 1 & SOC 2 reports\nWeb app penetration testing\niOS/Android app penetration testing\nJava/Python source code reviews\nIncident Handling and Response\nVendor Risk Management\nPerforming PCI-DSS compliance assessments\nConsulting application development teams on security issues, risks, and mitigation advice\n\n\nBreathwrok/Meditation instructor volunteering with a non-profit to bring meditation, breathwork, emotional intelligence, social connection, and service leadership to college students, faculty and staff.\n\nWe envision happy and mindful campus communities where students, faculty, & staff thrive in life and lead with clarity of mind, resilience, purpose & belonging.\n\nCurrently working with the chapter at the University of Southern California.",
+    "From": "2024",
+    "Title": "Senior Application Security Engineer",
+    "Company": "Capital Group",
+    "CompanyProfile": "https://www.linkedin.com/company/4019/",
+    "CompanyWebsite": "https://www.capitalgroup.com/us/landing-pages/linkedin-terms-of-use.html",
+    "Email": "herrickstar@gmail.com",
+    "Phone": "2017364639",
+    "IM": "",
+    "Twitter": "",
+    "Location": "Los Angeles, California, United States",
+    "Industry": "Financial Services",
+    "My Tags": [],
+    "extended": {
+      "positions": [
+        {
+          "Company": "Capital Group",
+          "Title": "Senior Application Security Engineer",
+          "Description": "",
+          "From": "4 - 2024",
+          "To": ""
+        },
+        {
+          "Company": "Frontdoor, Inc.",
+          "Title": "Senior Security Engineer",
+          "Description": "",
+          "From": "8 - 2022",
+          "To": "3 - 2024"
+        },
+        {
+          "Company": "Jack in the Box",
+          "Title": "Senior Application Security Engineer",
+          "Description": "",
+          "From": "3 - 2020",
+          "To": "8 - 2022"
+        },
+        {
+          "Company": "Smartmatic",
+          "Title": "Senior Application Security Engineer",
+          "Description": "",
+          "From": "3 - 2019",
+          "To": "2 - 2020"
+        },
+        {
+          "Company": "Barrick Gold Corporation",
+          "Title": "Information Security Engineer",
+          "Description": "",
+          "From": "5 - 2018",
+          "To": "3 - 2019"
+        },
+        {
+          "Company": "Secureapp Technologies",
+          "Title": "Associate Application Security Engineer",
+          "Description": "",
+          "From": "2 - 2017",
+          "To": "5 - 2018"
+        },
+        {
+          "Company": "Byte to Bit Technologies Pvt Ltd",
+          "Title": "Cybersecurity Analyst",
+          "Description": "",
+          "From": "7 - 2014",
+          "To": "8 - 2015"
+        }
+      ],
+      "skills": [
+        "Incident Response",
+        "Endpoint Security",
+        "CSIRT",
+        "Application Security",
+        "Cybersecurity",
+        "Microsoft Office",
+        "Microsoft Excel",
+        "SQL",
+        "Microsoft Word",
+        "Microsoft PowerPoint",
+        "Management",
+        "Linux",
+        "Cisco packet Tracer, GNS3 Programming languages: C, C++, python",
+        "Cisco Routers/Switches | Microsoft Office | Active Directory Services",
+        "Troubleshooting | TCP/IP Protocol | Server Hardware | Windows 7",
+        "Windows Server | Network Security/Administration | PPP | Frame-Relay | ISDN",
+        "OSPF, EIGRP, IGRP, RIP and RIPv2 | HSRP | DHCP | DNS | FTP | TFTP | CHAP | SNMP",
+        "AWS Console, AWS CLI, Amazon EC2, S3, RDS, VPC, SQS, Lambda, DynamoDB, OpsWorks"
+      ],
+      "schools": [
+        {
+          "Name": "Wilmington University",
+          "Degree": "Master's degree",
+          "Field": "Information Security",
+          "From": "2015",
+          "To": "2017"
+        },
+        {
+          "Name": "Anna University",
+          "Degree": "Bachelor of Engineering (B.E.)",
+          "Field": "Computer Science",
+          "From": "2010",
+          "To": "2014"
+        }
+      ]
+    },
+    "My Notes": []
+  }
+}

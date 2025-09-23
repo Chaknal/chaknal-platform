@@ -1,0 +1,13 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T02:41:45.339Z",
+  "type": "rccommand",
+  "event": "ready",
+  "data": {
+    "clientid": "aec37b35-3d0d-4b95-875c-3a578adc0d1a",
+    "exclusions": {
+      "commands": [],
+      "campaigns": []
+    }
+  }
+}

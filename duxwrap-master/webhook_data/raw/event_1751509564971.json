@@ -1,0 +1,62 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T02:26:04.525Z",
+  "type": "visit",
+  "event": "create",
+  "data": {
+    "id": "id.1513388975",
+    "VisitTime": 1751509563578,
+    "Profile": "https://www.linkedin.com/in/sergio-campos-97b9b7362/",
+    "SalesProfile": "https://www.linkedin.com/sales/people/ACoAAFo0e68BEDr2GROQQH4fKCau2QmHFE0C2-Y,name,S__H",
+    "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACoAAFo0e68BEDr2GROQQH4fKCau2QmHFE0C2-Y",
+    "Picture": "",
+    "Degree": "1",
+    "First Name": "Sergio",
+    "Middle Name": "",
+    "Last Name": "Campos",
+    "Connections": "2",
+    "Summary": "",
+    "Title": "Manager, Customer Success",
+    "From": "",
+    "Company": "AMPED",
+    "CompanyProfile": "https://www.linkedin.com/company/69604975/",
+    "CompanyWebsite": "",
+    "PersonalWebsite": "",
+    "Email": "",
+    "Phone": "",
+    "IM": "",
+    "Twitter": "",
+    "Location": "San Mateo, California, United States",
+    "Industry": "Software Development",
+    "My Tags": [
+      "AMPED",
+      "\ud83e\udd86-default-followup-1",
+      "\ud83e\udd86-default-followup-2",
+      "\ud83e\udd86-default-followup-3",
+      "\ud83e\udd86-default-followup-4",
+      "\ud83e\udd86-default-followup-5",
+      "\ud83e\udd86-default-followup-6",
+      "\ud83e\udd86-default-followup-7",
+      "\ud83e\udd86-default-followup-8",
+      "\ud83e\udd86-testing a message sent -enrolled",
+      "testing a message sent",
+      "\ud83e\udd86-testing a message sent -accepted"
+    ],
+    "extended": {
+      "positions": [
+        {
+          "Company": "AMPED",
+          "Location": "",
+          "Title": "Manager, Customer Success",
+          "Description": "",
+          "From": "",
+          "To": ""
+        }
+      ],
+      "skills": [],
+      "schools": []
+    },
+    "My Notes": ""
+  },
+  "messagecontext": "718525cc-8a67-640d785af98c"
+}

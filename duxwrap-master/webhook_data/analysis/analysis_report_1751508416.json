@@ -1,0 +1,107 @@
+{
+  "summary": {
+    "total_events": 5,
+    "unique_event_types": 5,
+    "unique_profiles": 4,
+    "time_range": {
+      "first_event": "2025-07-02T19:06:38.912320",
+      "last_event": "2025-07-02T19:06:42.951772",
+      "total_events": 5
+    }
+  },
+  "event_type_breakdown": {
+    "message.received": 1,
+    "action.completed": 1,
+    "visit.completed": 1,
+    "rccommand.ready": 1,
+    "connect.accepted": 1
+  },
+  "profile_activity": {
+    "https://www.linkedin.com/in/chris-gullo/": 1,
+    "https://www.linkedin.com/in/sergio-campos/": 1,
+    "https://www.linkedin.com/in/jane-doe/": 1,
+    "https://www.linkedin.com/in/alex-smith/": 1
+  },
+  "data_structure_analysis": {
+    "common_fields": [
+      "event",
+      "userid",
+      "timestamp",
+      "type",
+      "data"
+    ],
+    "field_types": {
+      "type": [
+        "str"
+      ],
+      "event": [
+        "str"
+      ],
+      "profile": [
+        "str"
+      ],
+      "userid": [
+        "str"
+      ],
+      "data": [
+        "dict"
+      ],
+      "timestamp": [
+        "int"
+      ]
+    },
+    "sample_event_structure": {
+      "type": "message",
+      "event": "received",
+      "profile": "https://www.linkedin.com/in/chris-gullo/",
+      "userid": "test_user_123",
+      "data": {
+        "from": "https://www.linkedin.com/in/chris-gullo/",
+        "message": "Hi, thanks for connecting!",
+        "timestamp": 1751508398903
+      },
+      "timestamp": 1751508398903
+    }
+  },
+  "recommendations": {
+    "database_tables": [
+      {
+        "name": "messages",
+        "description": "Store message events from Dux-Soup",
+        "key_fields": [
+          "event_id",
+          "profile_url",
+          "event_type",
+          "timestamp"
+        ]
+      },
+      {
+        "name": "actions",
+        "description": "Store action events (connect, visit, etc.)",
+        "key_fields": [
+          "event_id",
+          "profile_url",
+          "action_type",
+          "timestamp"
+        ]
+      },
+      {
+        "name": "robot_commands",
+        "description": "Store robot command events",
+        "key_fields": [
+          "event_id",
+          "command_type",
+          "status",
+          "timestamp"
+        ]
+      }
+    ],
+    "field_mappings": {},
+    "indexes": [
+      "CREATE INDEX idx_events_profile_url ON events(profile_url)",
+      "CREATE INDEX idx_events_timestamp ON events(timestamp)",
+      "CREATE INDEX idx_events_type ON events(event_type)"
+    ],
+    "constraints": []
+  }
+}

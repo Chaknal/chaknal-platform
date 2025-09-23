@@ -1,0 +1,110 @@
+{
+  "event_id": "event_1751514315137",
+  "event_type": "visit",
+  "event_name": "create",
+  "profile_url": null,
+  "dux_user_id": "117833704731893145427",
+  "timestamp": "2025-07-02 20:45:15.137461",
+  "raw_data": {
+    "userid": "117833704731893145427",
+    "time": "2025-07-03T03:45:14.400Z",
+    "type": "visit",
+    "event": "create",
+    "data": {
+      "id": "id.603316110",
+      "VisitTime": 1751514313531,
+      "Profile": "https://www.linkedin.com/in/taylor-fern-32607114a",
+      "SalesProfile": "https://www.linkedin.com/sales/lead/ACwAACP1344B09ulNTtHsme83iXAq6kTri8HUhw,NAME_SEARCH,7zfz",
+      "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACwAACP1344B09ulNTtHsme83iXAq6kTri8HUhw",
+      "Picture": "https://media.licdn.com/dms/image/v2/C5603AQE2KBxcENLmLA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1594313881058?e=1756944000&v=beta&t=lw3Y_C14NhdwAuUDluzYmdmVZ5UE3GAZyclVu6-GrFQ",
+      "Degree": "1",
+      "First Name": "Taylor",
+      "Middle Name": "",
+      "Last Name": "Fern",
+      "Connections": "4261",
+      "Summary": "As a Business Development Manager at CYDERES, I help companies and professionals achieve their security objectives and protect their assets from cyber threats. I have been working in this role since May 2020, after joining Herjavec Group, which is now CYDERES, as a Commercial Sales Representative in December 2019.\n\nI leverage my business skills and knowledge to effectively communicate, negotiate, and collaborate with clients and partners, and to identify and pursue new opportunities and markets for CYDERES.\n\nSome of the services that I offer and promote to my clients and prospects include: Cloud Native Analytics Platform, Enterprise Managed Detection & Response, Cloud Security, Global SOC, Security Incident Response Team, Red Team as a Service, and Insider Threat Detection & Response. These are comprehensive and cutting-edge solutions that address various security challenges and needs in the digital era.\n\nI am passionate about delivering value and satisfaction to my clients and partners, and about learning and growing in the security industry. I am always eager to share my expertise and insights, and to hear feedback and suggestions. I invite you to contact me at taylor.fern@cyderes.com or (213)349-1543 to discuss how I can help you with your security goals.",
+      "From": "2020",
+      "Title": "Business Development Manager",
+      "Company": "Cyderes",
+      "CompanyProfile": "https://www.linkedin.com/company/47729/",
+      "CompanyWebsite": "https://www.cyderes.com",
+      "Email": "taylor.fern@cyderes.com",
+      "Phone": "(213)349-1543",
+      "IM": "",
+      "Twitter": "",
+      "Location": "Los Angeles, California, United States",
+      "Industry": "Computer and Network Security",
+      "My Tags": [],
+      "extended": {
+        "positions": [
+          {
+            "Company": "Cyderes",
+            "Title": "Business Development Manager",
+            "Description": "Herjavec Group is now CYDERES (Cyber Defense and Response)",
+            "From": "5 - 2020",
+            "To": ""
+          },
+          {
+            "Company": "Herjavec Group",
+            "Title": "Commercial Sales Representative",
+            "Description": "",
+            "From": "12 - 2019",
+            "To": "5 - 2020"
+          },
+          {
+            "Company": "Herjavec Group",
+            "Title": "Business Development ",
+            "Description": "Herjavec Group understands that technology alone cannot prevent today\u2019s cyber attacks. We have expertise in comprehensive security services including:\nManaged Security Services:\nSOC Operations\nThreat Detection\nSecurity Technology Engineering\n\nProfessional Services:\nAdvisory Services\nIdentity Services\nTechnology Implementation \nThreat Management \nIncident Response\n\nHerjavec Group delivers Co-Managed services globally supported by 5 state-of-the-art, Security Operations Center's (SOC), operating 24/7/365 by certified security professionals. Herjavec Group has offices globally including across the United States, the United Kingdom, India, and Canada.\n\nLet's connect:(213)349-1543 or tfern@herjavecgroup.com",
+            "From": "12 - 2018",
+            "To": "12 - 2019"
+          },
+          {
+            "Company": "IPS Industries, Inc.",
+            "Title": "Sales Representative",
+            "Description": "",
+            "From": "9 - 2017",
+            "To": "12 - 2018"
+          }
+        ],
+        "skills": [
+          "Team Management",
+          "Communication",
+          "Microsoft Office",
+          "Microsoft Excel",
+          "Microsoft Word",
+          "Public Speaking",
+          "Microsoft PowerPoint",
+          "Research",
+          "Business Communications",
+          "Teamwork",
+          "Sales Process",
+          "Sales",
+          "Customer Relationship Management (CRM)",
+          "Data Entry",
+          "Team Motivation",
+          "Direct Sales",
+          "Pre-sales",
+          "Sales Operations",
+          "Sales Motivation",
+          "Sales Leads",
+          "Email Marketing",
+          "Cold Calling",
+          "Business Development",
+          "Proposal Writing",
+          "Information Security"
+        ],
+        "schools": [
+          {
+            "Name": "Johnson & Wales University",
+            "Degree": "",
+            "Field": "Business, Management, Marketing, and Related Support Services",
+            "From": "2009",
+            "To": "2011"
+          }
+        ]
+      },
+      "My Notes": []
+    }
+  },
+  "processed": false
+}

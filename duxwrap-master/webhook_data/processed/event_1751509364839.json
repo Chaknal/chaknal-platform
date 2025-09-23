@@ -1,0 +1,177 @@
+{
+  "event_id": "event_1751509364839",
+  "event_type": "visit",
+  "event_name": "create",
+  "profile_url": null,
+  "dux_user_id": "117833704731893145427",
+  "timestamp": "2025-07-02 19:22:44.839518",
+  "raw_data": {
+    "userid": "117833704731893145427",
+    "time": "2025-07-03T02:22:43.929Z",
+    "type": "visit",
+    "event": "create",
+    "data": {
+      "id": "id.21881694",
+      "VisitTime": 1751509363039,
+      "Profile": "https://www.linkedin.com/in/sschwartz1",
+      "SalesProfile": "https://www.linkedin.com/sales/lead/ACwAAAFN414BMzpGZVz7Ux0H9JLPnXbDGua110Q,NAME_SEARCH,Tbux",
+      "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACwAAAFN414BMzpGZVz7Ux0H9JLPnXbDGua110Q",
+      "Picture": "https://media.licdn.com/dms/image/v2/C5603AQHCgOiSzpDXFQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1661969665603?e=1756944000&v=beta&t=HXXKbvpUWJzOkHWAzcke2b6QQxZmQ5PxXPjWcVWhYb4",
+      "Degree": "1",
+      "First Name": "Steve",
+      "Middle Name": "Schwartz",
+      "Last Name": "Cissp",
+      "Connections": "20137",
+      "Summary": "INFORMATION TECHNOLOGY and SECURITY EXECUTIVE\n\nInformation Technology and Security leader with over twenty five years proven managerial and  technical leadership experience looking for Senior Level Information Security position. Need a good CISO, then we should talk!\n\nSpecialties:\n\n\u2022\tCISSP  \n\u2022\tIT & Security Governance\n\u2022\tAligning Technology/Security to the Business\n\u2022\tNetwork security and architecture \n\u2022\tSOX/HIPAA /PCI /Privacy Compliance\n\u2022\tISO 27001Risk Assessment, Security & Compliance Audits\n\u2022\tSecurity Architecture\n\u2022\tSecurity Project Management\n\u2022\tSecurity Policies and Procedures\n\u2022\tVulnerability Analysis and Remediation\n\u2022\tSecurity Architecture\n\u2022\tFirewalls /IDS /IPS\n\u2022\tBusiness Continuity  & Disaster Recovery Planning\n\u2022\tDigital Asset Management\n\n\nSELECT CAREER HIGHLIGHTS:\n\n\u2022      CISSP - License:490809  2014 \u2013 2017  (passed on 1st sitting)    \n\n\u2022\tImplemented a strategic application portfolio for Directors Guild of Americas that aligned IT with organizational goals, saved $50K per year in software/hardware maintenance cost, eliminated redundancy, and increased the portfolio\u2019s performance and efficiency and the reliability, security, and scalability of underlying infrastructure.\n\n\u2022\tGrew Hexagon Computer Systems sales from scratch to $3M within two years of launch, providing applications for housing, manufacturing, order processing, distribution, security trading, and business intelligence segments.\n\n\u2022\tDeveloped and maintained an off-site disaster recovery site for the Directors Guild of America and ensured all IT emergency operations and disaster recovery plans were up-to-date and well executed if needed.\n\n\u2022\tManaged 4 regional managers and 65+ professional services consultants nationwide for Cognos Corporation, growing annual revenue to exceed $7M with 16.4% profit margin.\n\n\u2022\tServed as HIPAA security officer for nine years at Directors Guild of America with zero breaches; created, implemented, and audited comprehensive security policies, procedures, and technology.",
+      "From": "2015",
+      "Title": "Vice President, Chief Information Security Officer",
+      "Company": "Lionsgate",
+      "CompanyProfile": "https://www.linkedin.com/company/8539/",
+      "CompanyWebsite": "http://www.lionsgate.com",
+      "Email": "steve.schwartz@lionsgate.com",
+      "Phone": "(310) 449-9200",
+      "IM": "",
+      "Twitter": "",
+      "Location": "Los Angeles, California, United States",
+      "Industry": "Entertainment Providers",
+      "My Tags": [],
+      "extended": {
+        "positions": [
+          {
+            "Company": "Lionsgate",
+            "Title": "Vice President, Chief Information Security Officer",
+            "Description": "Director of IT Security\n\nIn this position, I am responsible for all Information and Network Security at Lionsgate. I oversee security of over 1000 servers and over 2500 endpoint and mobile devices spread across a wide area network. My responsibilities have me working with all levels of Lionsgate management, including the \u201cC\u201d Suite. My major responsibilities are:\n\n\uf0a7\tPrimary point of contact for all Information Security issues, initiative and policies.\n\uf0a7\tPlan, manage and ensure on-time delivery of all security programs, including network security, email security, data security, access control, cloud security, incident management, business continuity planning, and disaster recovery.\n\uf0a7\tCorporate risk assessment to identify all critical assets, data classification, threats landscape and remediation strategies. \n\uf0a7\tVulnerability and Patch management.\n\uf0a7\tManagement of Security Staff, including assignment of projects and tasks, performance evaluation, mentoring, and personal development.\n\uf0a7\tMaintain situational awareness of new and emerging security threats through monitoring of security web sites, attending seminars and webinars, meeting with security groups and organizations, as well as through my extensive network of security and law enforcement peers.\n\uf0a7\tDefine and author all Security Policies and Procedures, including the top-level Corporate Security Policy and all subsequent security policies down to the operational level. \n\uf0a7\tConsult with business units and departments on all matters relating to security, including acceptable use, mobile devices, international travel, DLP and data encryption.\n\uf0a7\tOversee SOX and PCI certification and compliance for IT.\n\uf0a7\tOversee Security Awareness Training Program \n\uf0a7\tProvide security vetting of all purchases of new hardware/software tools, SaaS, IaaS and managed services.\n\uf0a7\tVendor selection and contract negotiations for all security-related technologies and services.\n",
+            "From": "8 - 2015",
+            "To": ""
+          },
+          {
+            "Company": "IMAX",
+            "Title": "Information Security Manager",
+            "Description": "\u2022\tManage, focus and motivate capable IT Infrastructure & Operations teams\n\u2022\tInternal security reviews and audits to continually improve the company\u2019s compliance with     increasing security requirements.\n\u2022\tMaintain PCI-DSS or other regulatory certification and compliance requirements.\n\u2022\tDevelop strategies and objectives in support of the external and internal commitments for the systems security, performance, uptime and data processing SLAs.\n\u2022\tPerform risk audits and establish risk mitigation processes for the production deployment of the functional systems releases.\n\u2022\tProvide support for review and assessment of vendor contracts for various IT projects.\n\u2022\tComplete ad hoc data analysis to support management decisions.\n\u2022\tSupport the Security infrastructure.  \n\u2022\tRun Threat-Risk assessments based on Security methodologies.\n\u2022\tWork along with business units to make sure they mitigate security and compliance risks in line with committed governance programs & security policies.\n\u2022\tImplement a Security awareness program for the company as well as improving security logging, monitoring and reporting.",
+            "From": "7 - 2014",
+            "To": "8 - 2015"
+          },
+          {
+            "Company": "Directors Guild of America - PPHP",
+            "Title": "Director of Information Technology / HIPAA Security Officer",
+            "Description": "\u2022\tLed 20+ IT managers, employees, and full-time consultants while providing strategic planning for all IT initiatives; developed and managed an annual IT budget that ranged between $1.5M and $5M.\n\n\u2022\tServed as HIPAA security officer and managed security functions for networks, applications, data, and hardware.\n\n\u2022\tSelected and maintained relationships with outsourced vendors for network infrastructure support and helpdesk, security, application development, and Oracle database support.\n\n\u2022\tImplemented comprehensive IT and HIPAA policies and a compliance management program.\n\n\u2022\tManaged the design, build out, and virtualization of two data centers for primary use and disaster recovery.\n\n\u2022\tIntroduced a Cisco VoIP telephony solution that greatly increased functionality, integration, reliability, and redundancy of telephony services.\n\n\u2022\tOversaw the evaluation and selection of new technologies, hardware, and software.\n\n\u2022\tCreated and implemented all IT processes and procedures and provided both risk analysis and compliance.",
+            "From": "2003",
+            "To": "2014"
+          },
+          {
+            "Company": "Compuware",
+            "Title": "Manager of Methods and Practices",
+            "Description": "\u2022\tDefined, developed, and implemented the corporate UML-based full lifecycle Component Based Development (CBD) methodology, best practices, and standards for the development of cutting-edge software applications.\n\n\u2022\tDelivered C-level strategic consulting services, including technology assessments and selection, best practices development, security, and quality assurance functions.\n\n\u2022\tWrote technical and reference documents for print and web publication, including a CBD methodology handbook, UML modeling and CBD workshop courseware, CBD fundamental design guidelines, CBD standards and guidelines, and Component Design for N-tier Architectures and E-Commerce.\n\n\u2022\tManaged 60+-member cross-functional project teams on multiple assignments.",
+            "From": "1995",
+            "To": "2003"
+          },
+          {
+            "Company": "Hexagon Computer Systems",
+            "Title": "United States General Manager",
+            "Description": "\u2022\tManaged opening/daily functions of a US division of a privately held Canadian consulting company, overseeing incorporation, acquisition of office space/equipment, and relationship building with banks and creditors.\n\n\u2022\tOwned full P&L accountability for the $3M operation, including budget development, pipeline forecasting and revenue projections, and monthly reporting/analysis of actual revenue and expenses.\n\n\u2022\tDeveloped and executed sales and marketing strategies, defined packaged service offerings, negotiated contract terms and conditions, and continuously worked to optimize consulting rates.\n\n\u2022\tIdentified prospective clients/business development opportunities and evaluated client requirements to create related consulting proposals; oversaw billing and collections functions for more than 30 customer accounts.\n\n\u2022\tDelivered project management for large assignments, application analysis, design, and development, and creation of best practices/methodologies; also implemented change initiatives and related training sessions.\n\n\u2022\tHired, trained, and developed 25 consultants and administrators; set employee benchmarks, prepared annual performance reviews, and mentored team members in improving goal attainment.",
+            "From": "1993",
+            "To": "1995"
+          },
+          {
+            "Company": "Cognos",
+            "Title": "Manager of Client Services",
+            "Description": "\u2022\tManagement of 4 regional managers, and 65+ professional services consultants and teachers located throughout the United States\n\u2022\tFull profit-center P&L responsibility for:\n       o       Development of budgets - Monthly revenue projections and sales pipeline forecasting\n       o\tMonthly reporting of actual revenue and expenses versus projections, as well as consulting gross margin and net contribution\n\u2022\tDefinition of packaged service offerings, consulting rates and engagement terms and conditions\n\u2022\tHiring of employees, setting employee performance goals and preparation of annual performance reviews\n\u2022\tDefinition of client requirements, preparation of consulting proposals, made customer sales presentations and negotiated consulting contracts\n\u2022\tDeveloped and managed partnership and subcontractor relationships\n\u2022\tDelivered \u201cC\u201d-level consulting services including:\n       o\tBusiness process analysis and reengineering\n       o\tDevelopment of systems development standards, procedures and methodologies\n       o\tStaff skills assessment and education planning\n       o\tApplication engineering, analysis and design (Object Oriented Analysis and Design  using UML, as well as Process and Data modeling using traditional DFD and ERD techniques)\n\u2022\tManagement of large, complex multi-discipline projects\n\u2022\tEducation and mentoring of consultants and client staff\n\u2022\tExperience with Import/Export, Financial, Manufacturing, Order Processing, Billing, Security Trading, Education, Electrical Utility, ERP and Insurance applications.\n\u2022\tI successfully managed and grew the professional services business to over $7 million in revenue, with a 16.4% profit margin. All consulting work was done with the COGNOS PowerHouse 4GL language.",
+            "From": "10 - 1988",
+            "To": "9 - 1993"
+          }
+        ],
+        "skills": [
+          "Management",
+          "Leadership",
+          "Requirements Analysis",
+          "HIPAA Security",
+          "CISSP",
+          "Network Security",
+          "Risk Assessment",
+          "IT Security Policies",
+          "Information Technology",
+          "C#",
+          "Project Management",
+          "Software Project Management",
+          "Data Modeling",
+          "Enterprise Architecture",
+          "Business Analysis",
+          "Team Building",
+          "SDLC",
+          "Professional Services",
+          "Vendor Management",
+          "Business Intelligence",
+          "IT Management",
+          "Agile Methodologies",
+          "IT Strategy",
+          "Team Leadership",
+          "Cloud Computing",
+          "SaaS",
+          "Analysis",
+          "Security",
+          "Disaster Recovery",
+          "Software Development",
+          "Consulting",
+          "Outsourcing",
+          "Database Design",
+          "Data Warehousing",
+          "IT Security Assessments",
+          "Business Continuity Planning",
+          "Cisco VoIP",
+          "HIPAA",
+          "UML",
+          "Business Continuity",
+          "Security Policy Development",
+          "Security Compliance",
+          "HIPAA Compliance",
+          "Integration",
+          "Data Center",
+          "Information Security",
+          "Virtualization",
+          "Strategy",
+          "Training",
+          "Security Architecture Design"
+        ],
+        "schools": [
+          {
+            "Name": "The University of Texas at Austin",
+            "Degree": "",
+            "Field": "Computer Science",
+            "From": "",
+            "To": ""
+          },
+          {
+            "Name": "W.T. White",
+            "Degree": "",
+            "Field": "",
+            "From": "",
+            "To": ""
+          },
+          {
+            "Name": "W.T. White",
+            "Degree": "",
+            "Field": "",
+            "From": "",
+            "To": ""
+          },
+          {
+            "Name": "W.T. White",
+            "Degree": "",
+            "Field": "",
+            "From": "",
+            "To": ""
+          },
+          {
+            "Name": "W.T. White",
+            "Degree": "",
+            "Field": "",
+            "From": "",
+            "To": ""
+          }
+        ]
+      },
+      "My Notes": []
+    }
+  },
+  "processed": false
+}

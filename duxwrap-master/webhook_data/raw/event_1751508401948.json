@@ -1,0 +1,11 @@
+{
+  "type": "rccommand",
+  "event": "ready",
+  "userid": "test_user_123",
+  "data": {
+    "command": "ready",
+    "status": "online",
+    "timestamp": 1751508401945
+  },
+  "timestamp": 1751508401945
+}

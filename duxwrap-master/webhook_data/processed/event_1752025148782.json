@@ -1,0 +1,28 @@
+{
+  "event_id": "event_1752025148782",
+  "event_type": "visit",
+  "event_name": "completed",
+  "profile_url": "https://www.linkedin.com/in/brianbirkett/",
+  "dux_user_id": "117833704731893145427",
+  "timestamp": "2025-07-08 18:39:08.782115",
+  "raw_data": {
+    "type": "visit",
+    "event": "completed",
+    "profile": "https://www.linkedin.com/in/brianbirkett/",
+    "userid": "117833704731893145427",
+    "api_key": "e96sH0Qehcqk8LWsyNjJpr9OL9qzasXR",
+    "data": {
+      "action": "visit",
+      "status": "success",
+      "targeturl": "https://www.linkedin.com/in/brianbirkett/",
+      "timestamp": 1752025148779,
+      "profile_info": {
+        "name": "Brian Birkett",
+        "headline": "LinkedIn Profile",
+        "location": "Unknown"
+      }
+    },
+    "timestamp": 1752025148779
+  },
+  "processed": false
+}

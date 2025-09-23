@@ -1,0 +1,24 @@
+{
+  "event_id": "event_1752025149846",
+  "event_type": "connect",
+  "event_name": "sent",
+  "profile_url": "https://www.linkedin.com/in/brianbirkett/",
+  "dux_user_id": "117833704731893145427",
+  "timestamp": "2025-07-08 18:39:09.846730",
+  "raw_data": {
+    "type": "connect",
+    "event": "sent",
+    "profile": "https://www.linkedin.com/in/brianbirkett/",
+    "userid": "117833704731893145427",
+    "api_key": "e96sH0Qehcqk8LWsyNjJpr9OL9qzasXR",
+    "data": {
+      "action": "connect",
+      "status": "sent",
+      "targeturl": "https://www.linkedin.com/in/brianbirkett/",
+      "message": "Hi Brian, I'd like to connect with you on LinkedIn!",
+      "timestamp": 1752025149791
+    },
+    "timestamp": 1752025149791
+  },
+  "processed": false
+}

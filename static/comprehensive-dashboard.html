@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaknal Platform - Comprehensive Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #4a5568;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #718096;
+            margin-bottom: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: #718096;
+            font-size: 1rem;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            color: #4a5568;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-icon {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4a5568;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .btn-sm {
+            padding: 6px 12px;
+            font-size: 12px;
+            margin: 2px;
+        }
+        
+        .contact-actions {
+            margin-top: 10px;
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 10px;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            width: 90%;
+        }
+        
+        .modal-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-body {
+            padding: 20px;
+        }
+        
+        .modal-footer {
+            padding: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #999;
+        }
+        
+        .contact-stats {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #718096, #4a5568);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #f56565, #e53e3e);
+        }
+
+        .upload-area {
+            border: 2px dashed #cbd5e0;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: border-color 0.3s ease;
+        }
+
+        .upload-area:hover {
+            border-color: #667eea;
+        }
+
+        .upload-area.dragover {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .contact-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .contact-item {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .contact-name {
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 5px;
+        }
+
+        .contact-details {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        .contact-score {
+            display: inline-block;
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab.active {
+            border-bottom-color: #667eea;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #718096;
+        }
+
+        .success-message {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .error-message {
+            background: linear-gradient(135deg, #f56565, #e53e3e);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .chart-container {
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🚀 Chaknal Platform</h1>
+            <p>Comprehensive LinkedIn Automation & Prospect Management</p>
+            
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalContacts">-</div>
+                    <div class="stat-label">Total Contacts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalCampaigns">-</div>
+                    <div class="stat-label">Active Campaigns</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalUsers">-</div>
+                    <div class="stat-label">Platform Users</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="avgLeadScore">-</div>
+                    <div class="stat-label">Avg Lead Score</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- User Management Section -->
+            <div class="section">
+                <h2>
+                    <div class="section-icon">👥</div>
+                    User Management
+                </h2>
+                
+                <div class="tabs">
+                    <div class="tab active" onclick="switchTab('user', 'register')">Register</div>
+                    <div class="tab" onclick="switchTab('user', 'profile')">Profile</div>
+                    <div class="tab" onclick="switchTab('user', 'stats')">Stats</div>
+                </div>
+
+                <!-- User Registration Tab -->
+                <div class="tab-content active" id="user-register">
+                    <form id="userRegistrationForm">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="userEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" id="userPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" id="userConfirmPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" id="userFirstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" id="userLastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" id="userCompany">
+                        </div>
+                        <div class="form-group">
+                            <label>Role</label>
+                            <select id="userRole">
+                                <option value="user">User</option>
+                                <option value="manager">Manager</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Register User</button>
+                    </form>
+                </div>
+
+                <!-- User Profile Tab -->
+                <div class="tab-content" id="user-profile">
+                    <div class="loading">Profile management coming soon...</div>
+                </div>
+
+                <!-- User Stats Tab -->
+                <div class="tab-content" id="user-stats">
+                    <div class="loading">User statistics coming soon...</div>
+                </div>
+            </div>
+
+            <!-- Prospect Management Section -->
+            <div class="section">
+                <h2>
+                    <div class="section-icon">🎯</div>
+                    Prospect Management
+                </h2>
+                
+                <div class="tabs">
+                    <div class="tab active" onclick="switchTab('prospect', 'upload')">Upload</div>
+                    <div class="tab" onclick="switchTab('prospect', 'search')">Search</div>
+                    <div class="tab" onclick="switchTab('prospect', 'enrich')">Enrich</div>
+                </div>
+
+                <!-- Prospect Upload Tab -->
+                <div class="tab-content active" id="prospect-upload">
+                    <div class="upload-area" id="uploadArea">
+                        <p>📁 Drag & drop CSV file here or click to browse</p>
+                        <input type="file" id="csvFile" accept=".csv" style="display: none;">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Campaign (Optional)</label>
+                        <select id="uploadCampaign">
+                            <option value="">Select Campaign...</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Default Tags</label>
+                        <input type="text" id="uploadTags" placeholder="tag1, tag2, tag3">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="autoEnroll" checked>
+                            Auto-enroll in campaign
+                        </label>
+                    </div>
+                    
+                    <button class="btn btn-success" onclick="uploadProspects()">Upload Prospects</button>
+                </div>
+
+                <!-- Prospect Search Tab -->
+                <div class="tab-content" id="prospect-search">
+                    <div class="form-group">
+                        <label>Search Query</label>
+                        <input type="text" id="searchQuery" placeholder="Search by name, company, title...">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Company</label>
+                        <input type="text" id="searchCompany" placeholder="Filter by company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Lead Score Range</label>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="number" id="minScore" placeholder="Min" min="0" max="100">
+                            <input type="number" id="maxScore" placeholder="Max" min="0" max="100">
+                        </div>
+                    </div>
+                    
+                    <button class="btn" onclick="searchProspects()">Search Prospects</button>
+                    
+                    <div id="searchResults" class="contact-list" style="margin-top: 20px;"></div>
+                </div>
+
+                <!-- Prospect Enrichment Tab -->
+                <div class="tab-content" id="prospect-enrich">
+                    <div class="form-group">
+                        <label>Select Contacts to Enrich</label>
+                        <textarea id="enrichContacts" rows="4" placeholder="Enter contact IDs (one per line) or use 'all' for all contacts"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="enrichCompany" checked>
+                            Enrich company information
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="enrichContact" checked>
+                            Enrich contact information
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="findEmails" checked>
+                            Find email addresses
+                        </label>
+                    </div>
+                    
+                    <button class="btn btn-success" onclick="enrichProspects()">Enrich Prospects</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Dashboard Section -->
+        <div class="section">
+            <h2>
+                <div class="section-icon">📊</div>
+                Contact Dashboard & Analytics
+            </h2>
+            
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('dashboard', 'overview')">Overview</div>
+                <div class="tab" onclick="switchTab('dashboard', 'analytics')">Analytics</div>
+                <div class="tab" onclick="switchTab('dashboard', 'segments')">Segments</div>
+                <div class="tab" onclick="switchTab('dashboard', 'actions')">Bulk Actions</div>
+            </div>
+
+            <!-- Dashboard Overview Tab -->
+            <div class="tab-content active" id="dashboard-overview">
+                <div class="loading">Loading dashboard overview...</div>
+            </div>
+
+            <!-- Dashboard Analytics Tab -->
+            <div class="tab-content" id="dashboard-analytics">
+                <div class="loading">Loading analytics...</div>
+            </div>
+
+            <!-- Dashboard Segments Tab -->
+            <div class="tab-content" id="dashboard-segments">
+                <div class="loading">Loading contact segments...</div>
+            </div>
+
+            <!-- Dashboard Actions Tab -->
+            <div class="tab-content" id="dashboard-actions">
+                <div class="form-group">
+                    <label>Select Contacts</label>
+                    <textarea id="bulkContacts" rows="4" placeholder="Enter contact IDs (one per line) or use 'all' for all contacts"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Action</label>
+                    <select id="bulkAction">
+                        <option value="tag">Add Tags</option>
+                        <option value="untag">Remove Tags</option>
+                        <option value="export">Export</option>
+                        <option value="enrich">Enrich</option>
+                        <option value="delete">Delete</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" id="bulkActionParams" style="display: none;">
+                    <label>Tags</label>
+                    <input type="text" id="bulkTags" placeholder="tag1, tag2, tag3">
+                </div>
+                
+                <button class="btn btn-success" onclick="performBulkAction()">Perform Action</button>
+            </div>
+        </div>
+
+        <!-- LinkedIn Automation Section -->
+        <div class="section">
+            <h2>
+                <div class="section-icon">🤖</div>
+                LinkedIn Automation
+            </h2>
+            
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('automation', 'campaigns')">Campaigns</div>
+                <div class="tab" onclick="switchTab('automation', 'queue')">Queue</div>
+                <div class="tab" onclick="switchTab('automation', 'health')">Health</div>
+            </div>
+
+            <!-- Automation Campaigns Tab -->
+            <div class="tab-content active" id="automation-campaigns">
+                <div class="loading">Loading campaigns...</div>
+            </div>
+
+            <!-- Automation Queue Tab -->
+            <div class="tab-content" id="automation-queue">
+                <div class="loading">Loading queue status...</div>
+            </div>
+
+            <!-- Automation Health Tab -->
+            <div class="tab-content" id="automation-health">
+                <div class="loading">Loading system health...</div>
+            </div>
+        </div>
+
+        <!-- Messages -->
+        <div id="successMessage" class="success-message" style="display: none;"></div>
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+    </div>
+
+    <script>
+        // Global variables
+        let currentTab = 'user';
+        let currentSubTab = 'register';
+        let contacts = [];
+        let campaigns = [];
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            loadDashboardData();
+            setupEventListeners();
+        });
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // File upload handling
+            const uploadArea = document.getElementById('uploadArea');
+            const csvFile = document.getElementById('csvFile');
+
+            uploadArea.addEventListener('click', () => csvFile.click());
+            uploadArea.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                uploadArea.classList.add('dragover');
+            });
+            uploadArea.addEventListener('dragleave', () => {
+                uploadArea.classList.remove('dragover');
+            });
+            uploadArea.addEventListener('drop', (e) => {
+                e.preventDefault();
+                uploadArea.classList.remove('dragover');
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    csvFile.files = files;
+                    handleFileSelect(files[0]);
+                }
+            });
+
+            csvFile.addEventListener('change', (e) => {
+                if (e.target.files.length > 0) {
+                    handleFileSelect(e.target.files[0]);
+                }
+            });
+
+            // Form submissions
+            document.getElementById('userRegistrationForm').addEventListener('submit', handleUserRegistration);
+        }
+
+        // Tab switching
+        function switchTab(mainTab, subTab) {
+            // Update active tab
+            currentTab = mainTab;
+            currentSubTab = subTab;
+
+            // Update tab styling
+            const tabContainer = document.querySelector(`#${mainTab}-${subTab}`).closest('.section');
+            tabContainer.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            tabContainer.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+            event.target.classList.add('active');
+            document.getElementById(`${mainTab}-${subTab}`).classList.add('active');
+
+            // Load tab-specific content
+            loadTabContent(mainTab, subTab);
+        }
+
+        // Load tab content
+        function loadTabContent(mainTab, subTab) {
+            switch(`${mainTab}-${subTab}`) {
+                case 'dashboard-overview':
+                    loadDashboardOverview();
+                    break;
+                case 'dashboard-analytics':
+                    loadDashboardAnalytics();
+                    break;
+                case 'dashboard-segments':
+                    loadDashboardSegments();
+                    break;
+                case 'automation-campaigns':
+                    loadAutomationCampaigns();
+                    break;
+                case 'automation-queue':
+                    loadAutomationQueue();
+                    break;
+                case 'automation-health':
+                    loadAutomationHealth();
+                    break;
+            }
+        }
+
+        // Load dashboard data
+        async function loadDashboardData() {
+            try {
+                // Load stats
+                await loadStats();
+                
+                // Load campaigns for dropdowns
+                await loadCampaigns();
+                
+                // Load contacts
+                await loadContacts();
+                
+            } catch (error) {
+                showError('Failed to load dashboard data: ' + error.message);
+            }
+        }
+
+        // Load statistics
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/contact-dashboard/overview');
+                const data = await response.json();
+                
+                if (data.summary) {
+                    document.getElementById('totalContacts').textContent = data.summary.total_contacts || 0;
+                    document.getElementById('totalCampaigns').textContent = data.summary.total_campaigns || 0;
+                    document.getElementById('totalUsers').textContent = data.summary.total_users || 0;
+                    document.getElementById('avgLeadScore').textContent = data.summary.average_lead_score || 0;
+                }
+            } catch (error) {
+                console.error('Failed to load stats:', error);
+            }
+        }
+
+        // Load campaigns
+        async function loadCampaigns() {
+            try {
+                const response = await fetch('/api/campaigns');
+                campaigns = await response.json();
+                
+                const campaignSelect = document.getElementById('uploadCampaign');
+                campaignSelect.innerHTML = '<option value="">Select Campaign...</option>';
+                
+                campaigns.forEach(campaign => {
+                    const option = document.createElement('option');
+                    option.value = campaign.campaign_id;
+                    option.textContent = campaign.name;
+                    campaignSelect.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Failed to load campaigns:', error);
+            }
+        }
+
+        // Load contacts
+        async function loadContacts() {
+            try {
+                const response = await fetch('/api/prospects/search?per_page=100');
+                const data = await response.json();
+                contacts = data.prospects || [];
+            } catch (error) {
+                console.error('Failed to load contacts:', error);
+            }
+        }
+
+        // Handle user registration
+        async function handleUserRegistration(e) {
+            e.preventDefault();
+            
+            const formData = {
+                email: document.getElementById('userEmail').value,
+                password: document.getElementById('userPassword').value,
+                confirm_password: document.getElementById('userConfirmPassword').value,
+                first_name: document.getElementById('userFirstName').value,
+                last_name: document.getElementById('userLastName').value,
+                company_name: document.getElementById('userCompany').value,
+                role: document.getElementById('userRole').value
+            };
+
+            try {
+                const response = await fetch('/api/users/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    showSuccess('User registered successfully!');
+                    document.getElementById('userRegistrationForm').reset();
+                } else {
+                    const error = await response.json();
+                    showError('Registration failed: ' + error.detail);
+                }
+            } catch (error) {
+                showError('Registration failed: ' + error.message);
+            }
+        }
+
+        // Handle file selection
+        function handleFileSelect(file) {
+            if (file.type === 'text/csv' || file.name.endsWith('.csv')) {
+                document.getElementById('uploadArea').innerHTML = `
+                    <p>✅ File selected: ${file.name}</p>
+                    <p>Size: ${(file.size / 1024).toFixed(2)} KB</p>
+                `;
+            } else {
+                showError('Please select a valid CSV file');
+            }
+        }
+
+        // Upload prospects
+        async function uploadProspects() {
+            const fileInput = document.getElementById('csvFile');
+            if (!fileInput.files.length) {
+                showError('Please select a CSV file first');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+            formData.append('campaign_id', document.getElementById('uploadCampaign').value);
+            formData.append('auto_enroll', document.getElementById('autoEnroll').checked);
+            formData.append('tags', document.getElementById('uploadTags').value);
+
+            try {
+                const response = await fetch('/api/prospects/upload/csv', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    showSuccess(`Prospects uploaded successfully! Created: ${result.total_created}, Updated: ${result.total_updated}`);
+                    
+                    // Reset form
+                    document.getElementById('uploadArea').innerHTML = '<p>📁 Drag & drop CSV file here or click to browse</p>';
+                    fileInput.value = '';
+                    
+                    // Reload data
+                    await loadDashboardData();
+                } else {
+                    const error = await response.json();
+                    showError('Upload failed: ' + error.detail);
+                }
+            } catch (error) {
+                showError('Upload failed: ' + error.message);
+            }
+        }
+
+        // Search prospects
+        async function searchProspects() {
+            const query = document.getElementById('searchQuery').value;
+            const company = document.getElementById('searchCompany').value;
+            const minScore = document.getElementById('minScore').value;
+            const maxScore = document.getElementById('maxScore').value;
+
+            try {
+                let url = '/api/prospects/search?';
+                if (query) url += `query=${encodeURIComponent(query)}&`;
+                if (company) url += `company=${encodeURIComponent(company)}&`;
+                if (minScore) url += `lead_score_min=${minScore}&`;
+                if (maxScore) url += `lead_score_max=${maxScore}&`;
+
+                const response = await fetch(url);
+                const data = await response.json();
+
+                displaySearchResults(data.prospects);
+            } catch (error) {
+                showError('Search failed: ' + error.message);
+            }
+        }
+
+        // Display search results
+        function displaySearchResults(prospects) {
+            const container = document.getElementById('searchResults');
+            
+            if (!prospects || prospects.length === 0) {
+                container.innerHTML = '<p>No prospects found</p>';
+                return;
+            }
+
+            container.innerHTML = prospects.map(prospect => `
+                <div class="contact-item">
+                    <div class="contact-name">
+                        ${prospect.first_name} ${prospect.last_name}
+                        <span class="contact-score">${prospect.lead_score}</span>
+                    </div>
+                    <div class="contact-details">
+                        ${prospect.title || 'No title'} at ${prospect.company || 'Unknown company'}
+                    </div>
+                    <div class="contact-details">
+                        📧 ${prospect.email || 'No email'} | 📱 ${prospect.phone || 'No phone'}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Enrich prospects
+        async function enrichProspects() {
+            const contactsInput = document.getElementById('enrichContacts').value;
+            const contactIds = contactsInput === 'all' ? [] : contactsInput.split('\n').filter(id => id.trim());
+
+            const request = {
+                contact_ids: contactIds,
+                enrich_company: document.getElementById('enrichCompany').checked,
+                enrich_contact: document.getElementById('enrichContact').checked,
+                find_emails: document.getElementById('findEmails').checked,
+                update_lead_score: true
+            };
+
+            try {
+                const response = await fetch('/api/prospects/enrich', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(request)
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    showSuccess(`Enrichment completed! Enriched: ${result.enriched_count} contacts`);
+                    
+                    // Reload data
+                    await loadDashboardData();
+                } else {
+                    const error = await response.json();
+                    showError('Enrichment failed: ' + error.detail);
+                }
+            } catch (error) {
+                showError('Enrichment failed: ' + error.message);
+            }
+        }
+
+        // Load dashboard overview
+        async function loadDashboardOverview() {
+            try {
+                const response = await fetch('/api/contact-dashboard/overview');
+                const data = await response.json();
+                
+                const container = document.getElementById('dashboard-overview');
+                container.innerHTML = `
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">${data.summary?.total_contacts || 0}</div>
+                            <div class="stat-label">Total Contacts</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${data.summary?.total_companies || 0}</div>
+                            <div class="stat-label">Companies</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${data.summary?.total_campaigns || 0}</div>
+                            <div class="stat-label">Campaigns</div>
+                        </div>
+                    </div>
+                    
+                    <h3>Recent Contacts</h3>
+                    <div class="contact-list">
+                        ${(data.recent_contacts || []).map(contact => `
+                            <div class="contact-item">
+                                <div class="contact-name">${contact.first_name} ${contact.last_name}</div>
+                                <div class="contact-details">${contact.company || 'No company'} • ${contact.title || 'No title'}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            } catch (error) {
+                document.getElementById('dashboard-overview').innerHTML = '<div class="error-message">Failed to load overview</div>';
+            }
+        }
+
+        // Load dashboard analytics
+        async function loadDashboardAnalytics() {
+            try {
+                const response = await fetch('/api/contact-dashboard/analytics');
+                const data = await response.json();
+                
+                const container = document.getElementById('dashboard-analytics');
+                container.innerHTML = `
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">${data.contacts_with_email || 0}</div>
+                            <div class="stat-label">With Email</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${data.contacts_with_phone || 0}</div>
+                            <div class="stat-label">With Phone</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${data.average_lead_score?.toFixed(1) || 0}</div>
+                            <div class="stat-label">Avg Lead Score</div>
+                        </div>
+                    </div>
+                    
+                    <h3>Top Industries</h3>
+                    <div class="contact-list">
+                        ${(data.top_industries || []).map(industry => `
+                            <div class="contact-item">
+                                <div class="contact-name">${industry.name}</div>
+                                <div class="contact-details">${industry.count} contacts</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            } catch (error) {
+                document.getElementById('dashboard-analytics').innerHTML = '<div class="error-message">Failed to load analytics</div>';
+            }
+        }
+
+        // Load dashboard segments
+        async function loadDashboardSegments() {
+            try {
+                const response = await fetch('/api/contact-dashboard/segments');
+                const segments = await response.json();
+                
+                const container = document.getElementById('dashboard-segments');
+                container.innerHTML = segments.map(segment => `
+                    <div class="contact-item">
+                        <div class="contact-name">${segment.segment_name}</div>
+                        <div class="contact-details">
+                            ${segment.contact_count} contacts • 
+                            Avg Score: ${segment.average_lead_score?.toFixed(1) || 0} • 
+                            Engagement: ${(segment.engagement_rate * 100).toFixed(1)}%
+                        </div>
+                    </div>
+                `).join('');
+            } catch (error) {
+                document.getElementById('dashboard-segments').innerHTML = '<div class="error-message">Failed to load segments</div>';
+            }
+        }
+
+        // Load automation campaigns
+        async function loadAutomationCampaigns() {
+            try {
+                const response = await fetch('/api/campaigns');
+                const data = await response.json();
+                
+                const container = document.getElementById('automation-campaigns');
+                container.innerHTML = `
+                    <h3>Active Campaigns</h3>
+                    <div class="contact-list">
+                        ${(data || []).map(campaign => `
+                            <div class="contact-item">
+                                <div class="contact-name">${campaign.name}</div>
+                                <div class="contact-details">
+                                    Status: ${campaign.status} • 
+                                    Created: ${new Date(campaign.created_at).toLocaleDateString()}
+                                </div>
+                                <div class="contact-actions">
+                                    <button class="btn btn-sm btn-primary" onclick="importContacts('${campaign.campaign_id}')">
+                                        📥 Import Contacts
+                                    </button>
+                                    <button class="btn btn-sm btn-success" onclick="viewContacts('${campaign.campaign_id}', '${campaign.name}')">
+                                        👁️ View Contacts
+                                    </button>
+                                    <button class="btn btn-sm btn-secondary" onclick="editCampaign('${campaign.campaign_id}')">
+                                        ✏️ Edit
+                                    </button>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            } catch (error) {
+                document.getElementById('automation-campaigns').innerHTML = '<div class="error-message">Failed to load campaigns</div>';
+            }
+        }
+
+        // Contact management functions
+        function importContacts(campaignId) {
+            alert('Import Contacts functionality - Upload CSV/Excel files to add contacts to this campaign sequence');
+        }
+
+        async function viewContacts(campaignId, campaignName) {
+            try {
+                const response = await fetch(`/api/campaigns/${campaignId}/contacts`);
+                const data = await response.json();
+                
+                const modal = document.createElement('div');
+                modal.className = 'modal';
+                modal.innerHTML = `
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Contacts in ${campaignName}</h3>
+                            <button onclick="this.closest('.modal').remove()" class="close-btn">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="contact-stats">
+                                <p><strong>Total Contacts:</strong> ${data.total || 0}</p>
+                            </div>
+                            <div class="contact-list">
+                                ${(data.contacts || []).map(contact => `
+                                    <div class="contact-item">
+                                        <div class="contact-name">${contact.full_name || 'Unknown'}</div>
+                                        <div class="contact-details">
+                                            ${contact.email ? `Email: ${contact.email}` : ''} • 
+                                            ${contact.company_name ? `Company: ${contact.company_name}` : ''} • 
+                                            Status: ${contact.status || 'pending'}
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                            ${(data.contacts || []).length === 0 ? '<p>No contacts found. Use "Import Contacts" to add contacts to this campaign.</p>' : ''}
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" onclick="importContacts('${campaignId}')">Import More Contacts</button>
+                            <button class="btn btn-secondary" onclick="this.closest('.modal').remove()">Close</button>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+            } catch (error) {
+                alert('Failed to load contacts: ' + error.message);
+            }
+        }
+
+        function editCampaign(campaignId) {
+            alert('Edit Campaign functionality - Modify campaign settings, messages, and timing');
+        }
+
+        // Load automation queue
+        async function loadAutomationQueue() {
+            try {
+                const response = await fetch('/api/automation/queue');
+                const data = await response.json();
+                
+                const container = document.getElementById('automation-queue');
+                container.innerHTML = `
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">${data.queue_size || 0}</div>
+                            <div class="stat-label">Queue Size</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${data.pending || 0}</div>
+                            <div class="stat-label">Pending</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${data.completed || 0}</div>
+                            <div class="stat-label">Completed</div>
+                        </div>
+                    </div>
+                    
+                    <h3>Recent Queue Items</h3>
+                    <div class="contact-list">
+                        ${(data.recent_items || []).map(item => `
+                            <div class="contact-item">
+                                <div class="contact-name">${item.command}</div>
+                                <div class="contact-details">
+                                    Status: ${item.status} • 
+                                    Created: ${new Date(item.created_at).toLocaleDateString()}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            } catch (error) {
+                document.getElementById('automation-queue').innerHTML = '<div class="error-message">Failed to load queue</div>';
+            }
+        }
+
+        // Load automation health
+        async function loadAutomationHealth() {
+            try {
+                const response = await fetch('/api/automation/health');
+                const data = await response.json();
+                
+                const container = document.getElementById('automation-health');
+                container.innerHTML = `
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">${data.total_requests || 0}</div>
+                            <div class="stat-label">Total Requests</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${data.success_rate?.toFixed(1) || 0}%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${data.avg_response_time || 0}ms</div>
+                            <div class="stat-label">Avg Response</div>
+                        </div>
+                    </div>
+                    
+                    <h3>System Status</h3>
+                    <div class="contact-item">
+                        <div class="contact-name">API Health</div>
+                        <div class="contact-details">Status: ${data.status || 'Unknown'}</div>
+                    </div>
+                `;
+            } catch (error) {
+                document.getElementById('automation-health').innerHTML = '<div class="error-message">Failed to load health status</div>';
+            }
+        }
+
+        // Perform bulk actions
+        async function performBulkAction() {
+            const contactsInput = document.getElementById('bulkContacts').value;
+            const action = document.getElementById('bulkAction').value;
+            const tags = document.getElementById('bulkTags').value;
+
+            if (!contactsInput.trim()) {
+                showError('Please enter contact IDs');
+                return;
+            }
+
+            const contactIds = contactsInput === 'all' ? [] : contactsInput.split('\n').filter(id => id.trim());
+
+            const request = {
+                action: action,
+                contact_ids: contactIds,
+                parameters: {}
+            };
+
+            if (action === 'tag' || action === 'untag') {
+                request.parameters.tags = tags.split(',').map(tag => tag.trim());
+                request.parameters.action = action === 'tag' ? 'add' : 'remove';
+            }
+
+            try {
+                const response = await fetch('/api/contact-dashboard/bulk-actions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(request)
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    showSuccess(result.message);
+                    
+                    // Reload data
+                    await loadDashboardData();
+                } else {
+                    const error = await response.json();
+                    showError('Bulk action failed: ' + error.detail);
+                }
+            } catch (error) {
+                showError('Bulk action failed: ' + error.message);
+            }
+        }
+
+        // Show success message
+        function showSuccess(message) {
+            const successDiv = document.getElementById('successMessage');
+            successDiv.textContent = message;
+            successDiv.style.display = 'block';
+            setTimeout(() => successDiv.style.display = 'none', 5000);
+        }
+
+        // Show error message
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            setTimeout(() => errorDiv.style.display = 'none', 5000);
+        }
+
+        // Handle bulk action parameter changes
+        document.getElementById('bulkAction').addEventListener('change', function() {
+            const paramsDiv = document.getElementById('bulkActionParams');
+            if (this.value === 'tag' || this.value === 'untag') {
+                paramsDiv.style.display = 'block';
+            } else {
+                paramsDiv.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

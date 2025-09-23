@@ -1,0 +1,40 @@
+{
+  "event_id": "event_1751509809643",
+  "event_type": "message",
+  "event_name": "received",
+  "profile_url": null,
+  "dux_user_id": "117833704731893145427",
+  "timestamp": "2025-07-02 19:30:09.643598",
+  "raw_data": {
+    "userid": "117833704731893145427",
+    "time": "2025-07-03T02:30:09.138Z",
+    "type": "message",
+    "event": "received",
+    "data": {
+      "url": "https://www.linkedin.com/messaging/thread/2-NWI2MGVjZmItYWVjYS00NmJjLWFiOWYtYThmYzMwZWQyOTczXzEwMA==/",
+      "timestamp": "2025-07-03T02:28:55.043Z",
+      "type": "MEMBER_TO_MEMBER",
+      "text": "testing messaging",
+      "from": "https://www.linkedin.com/in/ACoAAFo0e68BEDr2GROQQH4fKCau2QmHFE0C2-Y",
+      "fromId": "id.1513388975",
+      "fromFirstName": "Sergio",
+      "fromLastName": "Campos",
+      "tags": [
+        "AMPED",
+        "\ud83e\udd86-default-followup-1",
+        "\ud83e\udd86-default-followup-2",
+        "\ud83e\udd86-default-followup-3",
+        "\ud83e\udd86-default-followup-4",
+        "\ud83e\udd86-default-followup-5",
+        "\ud83e\udd86-default-followup-6",
+        "\ud83e\udd86-default-followup-7",
+        "\ud83e\udd86-default-followup-8",
+        "\ud83e\udd86-testing a message sent -enrolled",
+        "testing a message sent",
+        "\ud83e\udd86-testing a message sent -accepted",
+        "\ud83e\udd86-Testing a message sent -followup-1"
+      ]
+    }
+  },
+  "processed": false
+}

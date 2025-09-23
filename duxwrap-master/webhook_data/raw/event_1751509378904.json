@@ -1,0 +1,185 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T02:22:58.310Z",
+  "type": "visit",
+  "event": "create",
+  "data": {
+    "id": "id.8998144",
+    "VisitTime": 1751509377441,
+    "Profile": "https://www.linkedin.com/in/virginialyons",
+    "SalesProfile": "https://www.linkedin.com/sales/lead/ACwAAACJTQABAGwSVk-VBv36BZwpcNOLWv6cs-0,NAME_SEARCH,zM-8",
+    "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACwAAACJTQABAGwSVk-VBv36BZwpcNOLWv6cs-0",
+    "Picture": "https://media.licdn.com/dms/image/v2/D5603AQHMeFTpwb1Ytw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1664411711308?e=1756944000&v=beta&t=Dd0ur3UzB6CaJGlaoCbJiQ6fUTrXXFxFaLHeNqDpSXQ",
+    "Degree": "1",
+    "First Name": "Virginia",
+    "Middle Name": "",
+    "Last Name": "Lyons",
+    "Connections": "3210",
+    "Summary": "Information Security leadership at the intersection of technology and business.\n\nAgile transformation, cloud strategy, information security and operational excellence all demand business-driven decisions in technical domains.  My experience in leading transformational change in organizations large and small is built on demonstrated technical skills combined with deep understanding of business imperatives and the ability to successfully coach teams through change.",
+    "From": "2022",
+    "Title": "SVP, Chief Information Security Officer",
+    "Company": "Sony Pictures Entertainment",
+    "CompanyProfile": "https://www.linkedin.com/company/1256/",
+    "CompanyWebsite": "http://www.sonypictures.com",
+    "Email": "virginia_lyons@spe.sony.com",
+    "Phone": "(310) 244-4000",
+    "IM": "",
+    "Twitter": "",
+    "Location": "Culver City, California, United States",
+    "Industry": "Entertainment Providers",
+    "My Tags": [],
+    "extended": {
+      "positions": [
+        {
+          "Company": "Sony Pictures Entertainment",
+          "Title": "SVP, Chief Information Security Officer",
+          "Description": "",
+          "From": "9 - 2022",
+          "To": ""
+        },
+        {
+          "Company": "Williams-Sonoma, Inc.",
+          "Title": "VP Technology, CISO",
+          "Description": "",
+          "From": "10 - 2018",
+          "To": "9 - 2022"
+        },
+        {
+          "Company": "Gap Inc.",
+          "Title": "Director, Product Security",
+          "Description": "",
+          "From": "8 - 2018",
+          "To": "10 - 2018"
+        },
+        {
+          "Company": "Macy's",
+          "Title": "VP, ECommerce Technology Security and Risk",
+          "Description": "Leading technology risk management, PCI compliance, IT security governance, access management, application security and security awareness functions for the enterprise.",
+          "From": "4 - 2014",
+          "To": "8 - 2018"
+        },
+        {
+          "Company": "Macy's",
+          "Title": "GVP, Website Delivery Services",
+          "Description": "As the leader of Website Delivery Services for macys.com and bloomingdales.com, my team built and supported one of the largest and most stable and high-performing proprietary ecommerce applications in the world, and helped drive years of double-digit growth for two of America\u2019s most exciting and innovative brands.\n",
+          "From": "6 - 2012",
+          "To": "4 - 2014"
+        },
+        {
+          "Company": "macys.com",
+          "Title": "VP, Website Development Services",
+          "Description": "In 2010, I moved to the Vice President role in Website Development, taking on leadership of the content engineering and project management functions in addition to continuing to lead engineering and architecture.  During this period, we grew the team to several hundred software delivery professionals, began working with staff augmentation vendors in India, Russia, Ukraine and Brazil, and migrated our legacy monolithic application to a massively scalable service-based architecture.\n\nThe substantial improvements we made in application architecture supported massive growth in our online business and continues to serve as the foundation for web and mobile commerce for Macy's.",
+          "From": "4 - 2010",
+          "To": "5 - 2012"
+        },
+        {
+          "Company": "Macy's",
+          "Title": "Director, Web Site Development",
+          "Description": "This was the first of a series of progressively senior roles at Macy's managing the engineering function for its two retail websites, macys.com and bloomingdales.com.  When I joined in this role, the team was small - approximately fifteen people - and based entirely in SF.",
+          "From": "2006",
+          "To": "4 - 2010"
+        },
+        {
+          "Company": "Innovative Interfaces",
+          "Title": "Director, Implementation Services",
+          "Description": "Innovative Interfaces is the world's leading integrated library systems platform, providing cataloging, circulation, acquisitions and periodicals management capabilities.  In this role, I led a team of 65 library systems professionals who implemented newly purchased systems for our customers in 42 countries.  We delivered over 100 systems implementations each year, for libraries including the Sorbonne and BNF in Paris, the Library of Congress, and public libraries all over the world.",
+          "From": "2003",
+          "To": "2006"
+        },
+        {
+          "Company": "Thomson Learning",
+          "Title": "Vice President, Editorial Systems Development",
+          "Description": "At Gale Group, part of Thomson Learning, I led the engineering team who completely re-platformed a massive system for importing, cataloging, indexing and editing up to 60,000 periodical articles per day.  We were able to deliver a web-based solution that allowed the company to completely revolutionize their approach to managing editorial services.",
+          "From": "2000",
+          "To": "2002"
+        },
+        {
+          "Company": "Thomson Dialog",
+          "Title": "Vice President, Engineering",
+          "Description": "At Dialog, I managed the project management and content engineering functions for what was, at the time, the worlds largest online commercial database.  After the acquisition by Thomson, I helped plan the migration of Dialog data and functionality to the Thomson West publishing platform.",
+          "From": "1 - 1999",
+          "To": "5 - 2001"
+        },
+        {
+          "Company": "Aircraft Technical Publishers",
+          "Title": "Director, Product Development",
+          "Description": "Led the product development and delivery functions for the industry-leading general aviation compliance publishing company.  In this role, I was able to use my expertise in XML-based publishing and process design to streamline workflows and create a more flexible electronic publishing process.",
+          "From": "1 - 1997",
+          "To": "12 - 1999"
+        }
+      ],
+      "skills": [
+        "Risk Management",
+        "Cybersecurity",
+        "Scrum",
+        "Retail Technology",
+        "Product Engineering",
+        "Application Security",
+        "Information Security Management",
+        "Engineering Management",
+        "Enterprise Software",
+        "Cross-functional Team Leadership",
+        "E-commerce",
+        "SDLC",
+        "Agile Methodologies",
+        "Project Management",
+        "Content Management",
+        "Requirements Gathering",
+        "Agile Project Management",
+        "Analytics",
+        "Business Intelligence",
+        "CRM",
+        "Change Management",
+        "Cloud Computing",
+        "Databases",
+        "IT Management",
+        "Integration",
+        "Leadership",
+        "Management",
+        "Outsourcing",
+        "Process Improvement",
+        "Product Development",
+        "Product Management",
+        "Retail",
+        "Program Management",
+        "Software Development",
+        "SaaS",
+        "Software Project Management",
+        "Strategic Partnerships",
+        "Strategy",
+        "Training",
+        "Vendor Management",
+        "Web Applications",
+        "Customer Relationship Management (CRM)",
+        "Software Development Life Cycle (SDLC)",
+        "Software as a Service (SaaS)",
+        "Team Leadership",
+        "Executive Management",
+        "Strategic Planning"
+      ],
+      "schools": [
+        {
+          "Name": "University of California, Hastings College of the Law",
+          "Degree": "JD",
+          "Field": "Law",
+          "From": "1987",
+          "To": "1990"
+        },
+        {
+          "Name": "Santa Clara University",
+          "Degree": "BA",
+          "Field": "",
+          "From": "1984",
+          "To": "1987"
+        },
+        {
+          "Degree": "",
+          "Field": "English",
+          "From": "1983",
+          "To": "1984"
+        }
+      ]
+    },
+    "My Notes": []
+  }
+}

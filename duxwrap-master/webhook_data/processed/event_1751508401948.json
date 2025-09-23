@@ -1,0 +1,20 @@
+{
+  "event_id": "event_1751508401948",
+  "event_type": "rccommand",
+  "event_name": "ready",
+  "profile_url": null,
+  "dux_user_id": "test_user_123",
+  "timestamp": "2025-07-02 19:06:41.948038",
+  "raw_data": {
+    "type": "rccommand",
+    "event": "ready",
+    "userid": "test_user_123",
+    "data": {
+      "command": "ready",
+      "status": "online",
+      "timestamp": 1751508401945
+    },
+    "timestamp": 1751508401945
+  },
+  "processed": false
+}

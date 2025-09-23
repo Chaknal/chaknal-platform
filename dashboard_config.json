@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "lenses": {
+      "0": {
+        "order": 0,
+        "parts": {
+          "0": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "rowSpan": 2,
+              "colSpan": 3
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/Microsoft_OperationsManagementSuite_Workspace/PartType/LogsDashboardPart",
+              "settings": {
+                "content": {
+                  "Query": "requests | where timestamp > ago(1h) | summarize count() by bin(timestamp, 5m)",
+                  "ControlType": "LogsChart",
+                  "SpecificChart": "Line",
+                  "PartTitle": "Request Rate",
+                  "PartSubTitle": "Last hour"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "name": "Chaknal Platform Dashboard",
+  "type": "Microsoft.Portal/dashboards"
+}

@@ -1,0 +1,84 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install basic dependencies
+RUN pip install fastapi uvicorn
+
+# Create a simple test app with comprehensive logging
+COPY <<EOF /app/main.py
+import logging
+import os
+import sys
+from fastapi import FastAPI
+from datetime import datetime
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler('/app/app.log')
+    ]
+)
+
+logger = logging.getLogger(__name__)
+
+app = FastAPI()
+
+@app.on_event("startup")
+async def startup_event():
+    logger.info("🚀 Container starting up...")
+    logger.info(f"Environment: {os.getenv('ENVIRONMENT', 'Not set')}")
+    logger.info(f"Database URL: {os.getenv('DATABASE_URL', 'Not set')}")
+    logger.info(f"Debug mode: {os.getenv('DEBUG', 'Not set')}")
+    logger.info(f"Secret key set: {'Yes' if os.getenv('SECRET_KEY') else 'No'}")
+    logger.info(f"Port: {os.getenv('PORT', '8000')}")
+    logger.info("✅ Startup complete!")
+
+@app.get("/")
+async def root():
+    logger.info("📡 Root endpoint called")
+    return {
+        "message": "Test container with logging!",
+        "timestamp": datetime.now().isoformat(),
+        "database_url": os.getenv("DATABASE_URL", "Not set"),
+        "environment": os.getenv("ENVIRONMENT", "Not set"),
+        "status": "running"
+    }
+
+@app.get("/health")
+async def health():
+    logger.info("🏥 Health check called")
+    return {
+        "status": "healthy",
+        "timestamp": datetime.now().isoformat(),
+        "uptime": "running"
+    }
+
+@app.get("/logs")
+async def get_logs():
+    logger.info("📋 Logs endpoint called")
+    try:
+        with open('/app/app.log', 'r') as f:
+            logs = f.read()
+        return {"logs": logs}
+    except Exception as e:
+        logger.error(f"Error reading logs: {e}")
+        return {"error": str(e)}
+
+if __name__ == "__main__":
+    logger.info("🐍 Starting Python application...")
+    try:
+        import uvicorn
+        logger.info("✅ Uvicorn imported successfully")
+        uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
+    except Exception as e:
+        logger.error(f"❌ Failed to start uvicorn: {e}")
+        raise
+EOF
+
+EXPOSE 8000
+
+CMD ["python", "main.py"]

@@ -1,0 +1,11 @@
+{
+  "profile_url": "https://www.linkedin.com/in/sergio-campos-97b9b7362/",
+  "message_id": "demo_msg_12345",
+  "sent_at": "2025-07-02T18:24:26.904112",
+  "message_type": "follow_up",
+  "message_content": "Hi Sergio,\n\nI hope this message finds you well! I came across your profile and was impressed by your work at LinkedIn.\n\nI'm reaching out because I think there might be some interesting opportunities for collaboration. Would you be open to a quick 15-minute call to discuss this further?\n\nLooking forward to hearing from you!\n\nBest regards,\n[Your Name]",
+  "linkedin_response": {
+    "status": "queued",
+    "messageid": "demo_msg_12345"
+  }
+}

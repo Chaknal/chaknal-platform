@@ -1,0 +1,111 @@
+# 🎯 Contact Import Dedicated Docker Container
+# This Dockerfile creates a focused container just for contact import functionality
+
+FROM python:3.11-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    libffi-dev \
+    libssl-dev \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first for better caching
+COPY requirements.contact-import.txt .
+
+# Install Python dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.contact-import.txt
+
+# Copy only the essential files for contact import
+COPY app/main.py .
+COPY app/api/contact_import.py ./api/
+COPY app/models/ ./models/
+COPY app/schemas/ ./schemas/
+COPY app/core/ ./core/
+COPY database/ ./database/
+COPY config/ ./config/
+
+# Create the main application file
+RUN cat > main.py << 'EOF'
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+import logging
+import os
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Create FastAPI app
+app = FastAPI(
+    title="Chaknal Contact Import API",
+    description="Dedicated API for contact import functionality",
+    version="1.0.0"
+)
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allow all origins for now
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Health check endpoint
+@app.get("/health")
+async def health_check():
+    return {
+        "status": "healthy", 
+        "service": "chaknal-contact-import",
+        "version": "1.0.0"
+    }
+
+# Root endpoint
+@app.get("/")
+async def root():
+    return {
+        "message": "Chaknal Contact Import API",
+        "status": "running",
+        "endpoints": {
+            "health": "/health",
+            "docs": "/docs",
+            "contact_import_preview": "/api/campaigns/{campaign_id}/contacts/import/preview",
+            "contact_import": "/api/campaigns/{campaign_id}/contacts/import"
+        }
+    }
+
+# Import and include contact import router
+try:
+    from api.contact_import import router as contact_import_router
+    app.include_router(contact_import_router, prefix="/api", tags=["Contact Import"])
+    logger.info("✅ Contact Import router loaded successfully")
+except ImportError as e:
+    logger.warning(f"⚠️ Could not load Contact Import router: {e}")
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+EOF
+
+# Create a non-root user
+RUN useradd --create-home --shell /bin/bash app && \
+    chown -R app:app /app
+USER app
+
+# Expose port
+EXPOSE 8000
+
+# Environment variables
+ENV PYTHONUNBUFFERED=1 \
+    LOG_LEVEL=INFO \
+    PORT=8000
+
+# Start command
+CMD ["python", "main.py"]

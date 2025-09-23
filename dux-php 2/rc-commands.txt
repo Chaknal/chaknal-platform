@@ -1,0 +1,3 @@
+connect https://www.linkedin.com/in/giles-garnett/
+visit https://www.linkedin.com/in/janjanjanjanjan/ 2020-11-01
+message https://www.linkedin.com/in/richard-wagner-0146a2199/ 2020-11-02

@@ -1,0 +1,13 @@
+{
+  "type": "message",
+  "event": "received",
+  "profile": "https://www.linkedin.com/in/brianbirkett/",
+  "userid": "117833704731893145427",
+  "api_key": "e96sH0Qehcqk8LWsyNjJpr9OL9qzasXR",
+  "data": {
+    "from": "https://www.linkedin.com/in/brianbirkett/",
+    "message": "Thanks for connecting! I'd love to learn more about your work.",
+    "timestamp": 1752025150877
+  },
+  "timestamp": 1752025150877
+}

@@ -1,0 +1,204 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T02:23:52.625Z",
+  "type": "visit",
+  "event": "create",
+  "data": {
+    "id": "id.10141960",
+    "VisitTime": 1751509431764,
+    "Profile": "https://www.linkedin.com/in/shannonbrewster",
+    "SalesProfile": "https://www.linkedin.com/sales/lead/ACwAAACawQgBPb-0bWsyPhjrKFJsUoT0-diUsx4,NAME_SEARCH,BYwR",
+    "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACwAAACawQgBPb-0bWsyPhjrKFJsUoT0-diUsx4",
+    "Picture": "https://media.licdn.com/dms/image/v2/D5603AQGxZNpyNcZe4w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1668402232646?e=1756944000&v=beta&t=erO-J_UGYiOoapAr_DW3VxWGu7gbbdGdMA6oL0TE1Cs",
+    "Degree": "1",
+    "First Name": "Shannon",
+    "Middle Name": "",
+    "Last Name": "Brewster",
+    "Connections": "7256",
+    "Summary": "Business and people-focused cybersecurity leader with 25+ years in technology and cybersecurity, including 15+ years in leadership roles managing teams of up to 200. Proven track record of delivering business-enabling security programs across various industries such as Federal Government, Local Government, SaaS startups, non-profits and with numerous clients spanning healthcare, financial, and technology sectors. Skilled in building technical security teams, client-facing services organizations, sales and engineering teams that drive revenue growth and create collaborative, consensus-driven cultures.\n\nActive in the security community and advising security and privacy startups and enterprises.\n\nKey Areas of Expertise:\n\n- Security Programs: Board Reporting, Enterprise Security, Application/Product Security, Security Operations, Data Privacy, Identity & Access Management, Security M&A Due Diligence, Cloud Security, Threat Intelligence, Zero Trust, Data Loss Prevention, Detection Engineering and Response, Vulnerability Management, GRC, Data Governance, Employee Education, Enterprise Risk Management, Incident Response, Insider Threat, Policy Development, Election Security.\n\n- Compliance: NIST CSF, ISO27001, SOC2 (Type I & II), CIS 8.0, GDPR, CPRA, HIPAA, HITRUST, Sarbanes-Oxley (SOX), GLBA Safeguards, PCI.\n\n- Technology: On-prem, hybrid, multi-cloud, cloud-native, SaaS, PaaS, IaaS, AWS, GCP, Azure, Linux, Mac OS, Windows, Data Privacy Platforms, Firewalls, CSPM, SIEM, SOAR, EDR, IAM, DLP, ZTNA, CASB, PAM, Generative AI.",
+    "From": "2024",
+    "Title": "Chief Information Security Officer",
+    "Company": "LevelBlue",
+    "CompanyProfile": "https://www.linkedin.com/company/102069244/",
+    "CompanyWebsite": "http://www.levelblue.com/",
+    "Email": "shannon@brewster.cloud",
+    "Phone": "310-227-7148",
+    "IM": "",
+    "Twitter": "sbrewsteratt",
+    "Location": "Los Angeles, California, United States",
+    "Industry": "Computer and Network Security",
+    "My Tags": [
+      "AMPED"
+    ],
+    "extended": {
+      "positions": [
+        {
+          "Company": "LevelBlue",
+          "Title": "Chief Information Security Officer",
+          "Description": "Leadership of LevelBlue (a divested asset of AT&T) internal information security program, GRC, SecOps, and Enterprise IT organizations.",
+          "From": "12 - 2024",
+          "To": ""
+        },
+        {
+          "Company": "ISC2",
+          "Title": "Member Board of Directors",
+          "Description": "Corporate governance and oversight role with the world\u2019s leading cybersecurity member association responsible for trusted industry certifications such as CISSP, CCSP, CGRC, and CC.  Serving three year term 2025-2027. \n\nActing chair of by-laws committee and serve on the audit and risk committees. ",
+          "From": "1 - 2025",
+          "To": ""
+        },
+        {
+          "Company": "Wilmington University",
+          "Title": "Adjunct Professor",
+          "Description": "Part-time extended faculty position supporting the College of Technology\u2019s cybersecurity program, reaching classes on Cloud Security and enterprise BC/DR.",
+          "From": "4 - 2024",
+          "To": ""
+        },
+        {
+          "Company": "AT&T",
+          "Title": "Executive Director | General Manager | Security Consulting Services ",
+          "Description": "Senior leader of a cross-functional, global, cybersecurity services organization of 200 individuals, providing professionals services and consulting solutions to Fortune 500 firms, Federal, State, and Local Governments.  \n\nOrganizational revenue responsibility of $42M in Government (Federal, State, and Local) and $28M in the commercial segments.\n\nAreas of Focus: InfoSec program development and management, risk advisory services, regulatory and compliance (PCI DSS, CMMC, HITRUST, NIST, ISO27K), network security engineering,  technology enablement, and security transformation.",
+          "From": "4 - 2021",
+          "To": "12 - 2024"
+        },
+        {
+          "Company": "Rosemont College",
+          "Title": "Adjunct Professor",
+          "Description": "Inspiring others to join the field of cybersecurity.  Adjunct professor in graduate and undergraduate cyber studies program.",
+          "From": "8 - 2022",
+          "To": "4 - 2024"
+        },
+        {
+          "Company": "AT&T",
+          "Title": "Regional Consulting Director",
+          "Description": "Leadership of a team of cybersecurity consultants in the Southwest U.S. with an enterprise cyber consulting business. Focused on solving complex challenges in information security, risk mitigation, compliance and regulatory assessments, and assistance in the implementation of frameworks (PCI, HITRUST, ISO, NIST, CIS). Program development, threat and vulnerability management solutions, incident response, ethical hacking, application security, program assessment and strategy development, election security, SOC operations, and secure infrastructure services.",
+          "From": "11 - 2018",
+          "To": "4 - 2021"
+        },
+        {
+          "Company": "FireEye, Inc.",
+          "Title": "Systems Engineering",
+          "Description": "Systems engineering for partner distribution channel for FireEye products and Mandiant consulting services ",
+          "From": "4 - 2018",
+          "To": "10 - 2018"
+        },
+        {
+          "Company": "AT&T",
+          "Title": "Managed Security and Consulting Leader",
+          "Description": "",
+          "From": "11 - 2015",
+          "To": "4 - 2018"
+        },
+        {
+          "Company": "AT&T",
+          "Title": "Regional Director - Emerging Technologies",
+          "Description": "",
+          "From": "1 - 2014",
+          "To": "10 - 2015"
+        },
+        {
+          "Company": "AT&T",
+          "Title": "Regional Director, Industry & Mobility Applications Solutions",
+          "Description": "",
+          "From": "4 - 2013",
+          "To": "12 - 2013"
+        },
+        {
+          "Company": "AT&T",
+          "Title": "Regional Manager-AT&T Business Solutions",
+          "Description": "",
+          "From": "10 - 2009",
+          "To": "4 - 2013"
+        },
+        {
+          "Company": "Broadview Networks, now part of Windstream",
+          "Title": "Senior Enterprise Solutions Manager",
+          "Description": "",
+          "From": "2 - 2001",
+          "To": "9 - 2009"
+        }
+      ],
+      "skills": [
+        "Operational Strategy",
+        "Resource Allocation",
+        "Engineering Leadership",
+        "Coaching & Mentoring",
+        "Kanban",
+        "Security Operations",
+        "University Teaching",
+        "Consulting",
+        "Project Management Office (PMO)",
+        "Service Delivery",
+        "Operational Excellence",
+        "Sales Leadership",
+        "Business Strategy",
+        "Data-driven Decision Making",
+        "Teaching",
+        "Cybersecurity",
+        "Executive Management",
+        "Executive Leadership",
+        "Operations Management",
+        "Telecommunications",
+        "Wireless",
+        "Mobile Devices",
+        "Cloud Computing",
+        "Unified Communications",
+        "Solution Selling",
+        "Account Management",
+        "Networking",
+        "Managed Services",
+        "Management",
+        "MPLS",
+        "Leadership",
+        "Sales Management",
+        "Sales",
+        "Strategy",
+        "Strategic Partnerships",
+        "Sales Process",
+        "Team Leadership",
+        "Security",
+        "Customer Satisfaction",
+        "Go-to-market Strategy",
+        "Professional Services",
+        "Channel Partners",
+        "Business Intelligence",
+        "Staff Development",
+        "Organizational Effectiveness",
+        "Network Security",
+        "Risk Management",
+        "Security Incident Response",
+        "Cybersecurity Consulting"
+      ],
+      "schools": [
+        {
+          "Name": "Champlain College",
+          "Degree": "Master of Business Administration - MBA",
+          "Field": "Leadership",
+          "From": "2019",
+          "To": "2021"
+        },
+        {
+          "Name": "Champlain College",
+          "Degree": "Bachelor of Science",
+          "Field": "Cybersecurity",
+          "From": "",
+          "To": ""
+        },
+        {
+          "Name": "Binghamton University",
+          "Degree": "",
+          "Field": "Biology/Biological Sciences, General",
+          "From": "",
+          "To": ""
+        },
+        {
+          "Name": "UC Santa Barbara",
+          "Degree": "Customer Experience Certificate Program",
+          "Field": "Business",
+          "From": "2 - 2022",
+          "To": "11 - 2022"
+        }
+      ]
+    },
+    "My Notes": ""
+  }
+}

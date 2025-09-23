@@ -1,0 +1,160 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T03:42:48.852Z",
+  "type": "visit",
+  "event": "create",
+  "data": {
+    "id": "id.13286675",
+    "VisitTime": 1751514167901,
+    "Profile": "https://www.linkedin.com/in/robertcarrillosec",
+    "SalesProfile": "https://www.linkedin.com/sales/lead/ACwAAADKvRMBeoMv6ZmniEJNatu1vGYWksuxyps,NAME_SEARCH,scE7",
+    "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACwAAADKvRMBeoMv6ZmniEJNatu1vGYWksuxyps",
+    "Picture": "https://media.licdn.com/dms/image/v2/D5603AQEJGsFxLexjtg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724201392192?e=1756944000&v=beta&t=fx-J5ilDuly2rTRaf7YEjkgteP_uccF1Cy7sbu9BMB4",
+    "Degree": "1",
+    "First Name": "Robert",
+    "Middle Name": "",
+    "Last Name": "Carrillo",
+    "Connections": "1421",
+    "Summary": "",
+    "From": "2022",
+    "Title": "VP, Security Architect",
+    "Company": "Confidential ",
+    "CompanyProfile": "https://www.linkedin.com/company/29012947/",
+    "CompanyWebsite": "https://confidentiallgoo.com/",
+    "Email": "",
+    "Phone": "",
+    "IM": "",
+    "Twitter": "",
+    "Location": "United States",
+    "Industry": "Advertising Services",
+    "My Tags": [],
+    "extended": {
+      "positions": [
+        {
+          "Company": "Confidential ",
+          "Title": "VP, Security Architect",
+          "Description": "",
+          "From": "1 - 2022",
+          "To": ""
+        },
+        {
+          "Company": "Confidential ",
+          "Title": "VP, Cloud Security Engineer",
+          "Description": "",
+          "From": "4 - 2021",
+          "To": "1 - 2022"
+        },
+        {
+          "Company": "Fanatics, Inc.",
+          "Title": "Staff Security Engineer",
+          "Description": "",
+          "From": "5 - 2019",
+          "To": "4 - 2021"
+        },
+        {
+          "Company": "City National Bank",
+          "Title": "VP, Security Architect",
+          "Description": "",
+          "From": "8 - 2017",
+          "To": "5 - 2019"
+        },
+        {
+          "Company": "Sony Pictures Entertainment",
+          "Title": "Senior Manager, Information Security",
+          "Description": "- Security Architecture\n- Vulnerability Management (Infrastructure, SAST / DAST)\n- Vulnerability/Threat Assessment\n- Penetration Testing\n- System Hardening (Servers, Desktops, Network, Application)\n- Scripting\n- Team Lead\n- Project Management",
+          "From": "12 - 2015",
+          "To": "8 - 2017"
+        },
+        {
+          "Company": "Cornerstone OnDemand",
+          "Title": "Security Engineer",
+          "Description": "- Security Architecture\n- Incident Response\n- Intrusion Detection (PAN, Akamai)\n- SAST / DAST (Burp Suite, Checkmarx)\n- Penetration Testing\n- Vulnerability Management (Qualys, Nessus SecurityCenter, Nexpose, AppDetective)\n- SIEM/Log Analysis (Splunk, Syslog-NG, Elasticsearch)\n- Data Loss Prevention (Symantec DLP)\n- Scripting (Bash, Python, PowerShell, regex, awk, sed)\n- Compliance (FedRAMP)",
+          "From": "2 - 2015",
+          "To": "12 - 2015"
+        },
+        {
+          "Company": "Warner Bros. Entertainment Group of Companies",
+          "Title": "Information Security Engineer",
+          "Description": "- Security Architecture\n- Incident Response\n- Intrusion Detection (Sourcefire, Snort, HP TippingPoint, Tripwire, Honeyd)\n- Penetration Testing (Burp Suite, CORE Impact, Metasploit, Kali)\n- Vulnerability Management (Qualys, eEye Retina, Nessus, Webinspect)\n- Malware Analysis (IDA Pro, Damballa)\n- Forensics (Encase Enterprise, Helix, Volatility, Daemonlogger, Xplico)\n- SIEM/Log Analysis (IBM Qradar, Splunk, LogLogic, Syslog-NG)\n- Data Loss Prevention (Symantec DLP)\n- Scripting (Bash, Python, Perl, regex, awk, sed)\n- Compliance (PCI-DSS, SOX, ISO 27002)",
+          "From": "2 - 2012",
+          "To": "1 - 2015"
+        },
+        {
+          "Company": "Warner Bros. Entertainment Group of Companies",
+          "Title": "Information Security Analyst",
+          "Description": "",
+          "From": "5 - 2010",
+          "To": "2 - 2012"
+        },
+        {
+          "Company": "Warner Bros. Entertainment Group of Companies",
+          "Title": "Senior Support Analyst",
+          "Description": "- Network Support (Active Directory, Novell, etc.)\n- Software Support (OS, Custom and OTS Applications)\n- Hardware Support (Desktop, Server, Mobile)\n- Project Management (Division hardware/software roll-outs)\n- Windows, Mac OS X, *Nix\n- Divisional Technical Resource\n- Direct point of contact (Executive and VIP)",
+          "From": "9 - 1999",
+          "To": "5 - 2010"
+        }
+      ],
+      "skills": [
+        "Information Security",
+        "Vulnerability Management",
+        "Penetration Testing",
+        "Security",
+        "PCI DSS",
+        "Computer Forensics",
+        "Incident Response",
+        "Security Architecture Design",
+        "Intrusion Detection",
+        "Active Directory",
+        "Malware Analysis",
+        "Operating Systems",
+        "Network Security",
+        "Technical Support",
+        "DLP",
+        "Application Security",
+        "Vulnerability Assessment",
+        "Information Technology",
+        "Information Security Management",
+        "CISSP",
+        "Computer Security",
+        "Disaster Recovery",
+        "Network Administration",
+        "Metasploit",
+        "Data Center",
+        "Log Analysis",
+        "Security Audits",
+        "Windows Server",
+        "Firewalls",
+        "VMware",
+        "Virtualization",
+        "Windows",
+        "Business Continuity",
+        "IT Audit",
+        "CEH",
+        "Snort",
+        "CISA",
+        "Encryption",
+        "Network Architecture",
+        "Web Application Security",
+        "TCP/IP",
+        "VPN",
+        "IDS",
+        "Incident Management",
+        "Hardware",
+        "OS X",
+        "Cisco Technologies",
+        "Servers",
+        "IPS",
+        "Payment Card Industry Data Security Standard (PCI DSS)"
+      ],
+      "schools": [
+        {
+          "Degree": "Bachelors",
+          "Field": "Business Information Systems",
+          "From": "2002",
+          "To": "2005"
+        }
+      ]
+    },
+    "My Notes": []
+  }
+}

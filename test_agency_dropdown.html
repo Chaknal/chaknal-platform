@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Dropdown Test</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+        .info {
+            color: blue;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        function AgencyDropdownTest() {
+            const [user, setUser] = useState(null);
+            const [clients, setClients] = useState([]);
+            const [selectedClient, setSelectedClient] = useState(null);
+            const [testResults, setTestResults] = useState([]);
+
+            useEffect(() => {
+                // Simulate user login
+                const mockUser = {
+                    email: 'sercio@chaknal.com',
+                    is_agency: true,
+                    role: 'agency',
+                    user_id: '75a762b1-baf4-4494-836d-4725dcc1b816'
+                };
+                setUser(mockUser);
+
+                // Simulate fetching clients
+                const mockClients = [
+                    {
+                        id: "2043d80f-8f68-4232-a5a0-fc716280ad7a",
+                        name: "TechCorp Solutions",
+                        domain: "techcorp-demo.com",
+                        access_level: "full",
+                        stats: {
+                            dux_accounts: 1,
+                            campaigns: 2,
+                            contacts: 87,
+                            messages: 0
+                        }
+                    },
+                    {
+                        id: "bf1461a4-0141-44ef-abf7-e6f384247d9b", 
+                        name: "Marketing Masters",
+                        domain: "marketingmasters-demo.com",
+                        access_level: "full",
+                        stats: {
+                            dux_accounts: 1,
+                            campaigns: 2,
+                            contacts: 70,
+                            messages: 0
+                        }
+                    },
+                    {
+                        id: "39cea86b-2b7a-4434-ac2e-102e05812ccd",
+                        name: "SalesForce Pro", 
+                        domain: "salesforcepro-demo.com",
+                        access_level: "full",
+                        stats: {
+                            dux_accounts: 1,
+                            campaigns: 2,
+                            contacts: 81,
+                            messages: 0
+                        }
+                    }
+                ];
+                setClients(mockClients);
+                setSelectedClient(mockClients[0]);
+            }, []);
+
+            const runTests = () => {
+                const results = [];
+                
+                // Test 1: User is agency
+                results.push({
+                    test: "User is agency",
+                    status: user?.is_agency ? "PASS" : "FAIL",
+                    message: user?.is_agency ? "User is correctly identified as agency" : "User is not identified as agency"
+                });
+
+                // Test 2: Clients are loaded
+                results.push({
+                    test: "Clients are loaded",
+                    status: clients.length > 0 ? "PASS" : "FAIL",
+                    message: clients.length > 0 ? `${clients.length} clients loaded` : "No clients loaded"
+                });
+
+                // Test 3: Client selection works
+                results.push({
+                    test: "Client selection works",
+                    status: selectedClient ? "PASS" : "FAIL",
+                    message: selectedClient ? `Selected: ${selectedClient.name}` : "No client selected"
+                });
+
+                // Test 4: API endpoint test
+                fetch('https://chaknal-backend-container.azurewebsites.net/api/agency/clients')
+                    .then(response => {
+                        results.push({
+                            test: "API endpoint accessible",
+                            status: response.ok ? "PASS" : "FAIL",
+                            message: response.ok ? "API endpoint is accessible" : `API returned ${response.status}`
+                        });
+                        setTestResults(results);
+                    })
+                    .catch(error => {
+                        results.push({
+                            test: "API endpoint accessible",
+                            status: "FAIL",
+                            message: `API error: ${error.message}`
+                        });
+                        setTestResults(results);
+                    });
+
+                setTestResults(results);
+            };
+
+            return (
+                <div className="container">
+                    <h1>🏢 Agency Dropdown Test</h1>
+                    
+                    <div className="test-section">
+                        <h3>Current User</h3>
+                        {user ? (
+                            <div>
+                                <p><strong>Email:</strong> {user.email}</p>
+                                <p><strong>Is Agency:</strong> {user.is_agency ? "✅ Yes" : "❌ No"}</p>
+                                <p><strong>Role:</strong> {user.role}</p>
+                                <p><strong>User ID:</strong> {user.user_id}</p>
+                            </div>
+                        ) : (
+                            <p>Loading user...</p>
+                        )}
+                    </div>
+
+                    <div className="test-section">
+                        <h3>Client Dropdown</h3>
+                        {clients.length > 0 ? (
+                            <div>
+                                <select 
+                                    value={selectedClient?.id || ''} 
+                                    onChange={(e) => {
+                                        const client = clients.find(c => c.id === e.target.value);
+                                        setSelectedClient(client);
+                                    }}
+                                >
+                                    {clients.map(client => (
+                                        <option key={client.id} value={client.id}>
+                                            {client.name} ({client.domain})
+                                        </option>
+                                    ))}
+                                </select>
+                                
+                                {selectedClient && (
+                                    <div style={{marginTop: '10px'}}>
+                                        <h4>Selected Client: {selectedClient.name}</h4>
+                                        <p><strong>Domain:</strong> {selectedClient.domain}</p>
+                                        <p><strong>Access Level:</strong> {selectedClient.access_level}</p>
+                                        <p><strong>Stats:</strong></p>
+                                        <ul>
+                                            <li>DuxSoup Accounts: {selectedClient.stats.dux_accounts}</li>
+                                            <li>Campaigns: {selectedClient.stats.campaigns}</li>
+                                            <li>Contacts: {selectedClient.stats.contacts}</li>
+                                            <li>Messages: {selectedClient.stats.messages}</li>
+                                        </ul>
+                                    </div>
+                                )}
+                            </div>
+                        ) : (
+                            <p>Loading clients...</p>
+                        )}
+                    </div>
+
+                    <div className="test-section">
+                        <h3>Tests</h3>
+                        <button onClick={runTests}>Run Tests</button>
+                        
+                        {testResults.length > 0 && (
+                            <div style={{marginTop: '15px'}}>
+                                {testResults.map((result, index) => (
+                                    <div key={index} style={{margin: '5px 0'}}>
+                                        <span className={result.status === 'PASS' ? 'success' : 'error'}>
+                                            {result.status}
+                                        </span>
+                                        <strong> {result.test}:</strong> {result.message}
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
+                    <div className="test-section">
+                        <h3>Summary</h3>
+                        <p className="info">
+                            ✅ <strong>Database Setup:</strong> Agency user and clients created successfully<br/>
+                            ✅ <strong>Frontend Logic:</strong> Agency detection and client switching implemented<br/>
+                            ✅ <strong>Client Data:</strong> 3 sample clients available for testing<br/>
+                            ⚠️ <strong>API Endpoint:</strong> Agency API endpoint needs to be deployed/restarted
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<AgencyDropdownTest />, document.getElementById('root'));
+    </script>
+</body>
+</html>

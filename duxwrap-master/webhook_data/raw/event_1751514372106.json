@@ -1,0 +1,85 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T03:46:11.670Z",
+  "type": "visit",
+  "event": "create",
+  "data": {
+    "id": "id.407675895",
+    "VisitTime": 1751514370773,
+    "Profile": "https://www.linkedin.com/in/joe-t-673643b4",
+    "SalesProfile": "https://www.linkedin.com/sales/lead/ACwAABhMo_cBJDgr3eUaPuP-1_Dzva-4s1sGna8,NAME_SEARCH,AL7Z",
+    "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACwAABhMo_cBJDgr3eUaPuP-1_Dzva-4s1sGna8",
+    "Picture": "https://media.licdn.com/dms/image/v2/D5603AQHCIUPr-fxj-A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1692213501154?e=1756944000&v=beta&t=pPEmSmRoozBcTa40qvx0T1zXJ9IpSRbiDgEq1bUYDOw",
+    "Degree": "1",
+    "First Name": "Joe",
+    "Middle Name": "",
+    "Last Name": "Tiongco",
+    "Connections": "1666",
+    "Summary": "",
+    "From": "2016",
+    "Title": "Sr. Director of Information Technology, Cyber Security, HRIS and eDiscovery",
+    "Company": "MGA Entertainment",
+    "CompanyProfile": "https://www.linkedin.com/company/8964/",
+    "CompanyWebsite": "http://www.mgae.com",
+    "Email": "jtiongco@mgae.com",
+    "Phone": "(800) 222-4685",
+    "IM": "",
+    "Twitter": "",
+    "Location": "Los Angeles County, California, United States",
+    "Industry": "Consumer Goods",
+    "My Tags": [],
+    "extended": {
+      "positions": [
+        {
+          "Company": "MGA Entertainment",
+          "Title": "Sr. Director of Information Technology, Cyber Security, HRIS and eDiscovery",
+          "Description": "Sr. Director of Information Systems: Develop and implement IT strategies, oversee projects, manage the IT team, maintain security measures, handle vendor contracts, and ensure compliance.\n\nCybersecurity: Identify and mitigate risks, implement incident response plans, design secure infrastructure, monitor threats, create policies, and educate employees.\n\nHRIS: Manage HRIS operations, analyze data, integrate with other systems, customize features, train staff, and conduct system audits.\n\neDiscovery: Manage eDiscovery projects, consult clients, lead the team, ensure data integrity, maintain compliance, and communicate effectively.\n\nGeographical areas covered : North America (USA, Canada) Latin America, Asia and Europe (EU).\n\nSkill Sets includes the following:\n\n*IT Budget Management and Development\n*Global Network and Enterprise Cyber Security\n*eDiscovery and Relativity One \n*Information Security and Compliance - GDPR (EU), CCPA (CA)\n*End to end email Encryption system\n*Electronic Data Interchange E-commerce System\n*Coupa Procure to Pay System\n*Hyper V (Virtualization System)\n*Cisco DUO Multi Factor Authentication System\n*Rapid 7 IDR (SIEM)\n*Microsoft Advance Threat Protection\n*Sophos MTR Security Operations Center System\n*Avanan SAAS Inline Protection\n*Checkpoint Sandblast Security\n*Enterprise DLP - Data Loss Prevention System\n*HRIS - Global ADP Workforce Now System\n*Celergo - ADP Global Payroll System\n*Profit OKR system - Objectives Key Results\n*Cornerstone Learning, Development and Compensation System\n*SAP Success Factor System\n*Engagedly Talent Management System\n*Oracle Planning and Budgeting - PBCS Hyperion System\n*Microsoft Office 365\n*Microsoft Azure Enterprise System\n*Microsoft Sharepoint and Teams Collaboration System\n*Microsoft Co-Pilot Integration M365\n*Relatvity eDiscovery and Compliance System\n*Box & Dropbox Business - File Hosting System\n*Fresh Service Help Desk and Asset Management System\n*Artificial Intelligence Integration in Cyber Security",
+          "From": "3 - 2016",
+          "To": ""
+        },
+        {
+          "Company": "MGA Entertainment",
+          "Title": "Director of Information Technology and Cyber Security",
+          "Description": "Skill Sets:\n*IT Budget Management and Development\n*Global Network and Enterprise Security \n*Enterprise DLP - Data Loss Prevention System\n*Office 365 Enterprise System\n*Data Forensics, Legal Hold, Search and Discovery\n*Data Security and Compliance\n*John Gault Forecasting \n*Microsoft Dynamics ERP, Warehouse Management, Forecasting and Gentran EDI System\n*Fresh Service Help Desk and Asset Management System",
+          "From": "1 - 2008",
+          "To": "2 - 2016"
+        },
+        {
+          "Company": "MGA Entertainment",
+          "Title": "MIS Manager and Network Security",
+          "Description": "Skill Sets:\n*IT Budget Management and Development\n*Global Network and Enterprise Security\n*Microsoft Exchange Email System\n*NEC IPS Phone System Administration\n*Microsoft Axapta ERP and Gentran EDI System\n*Help Desk Management\n",
+          "From": "1 - 2004",
+          "To": "12 - 2007"
+        },
+        {
+          "Company": "MGA Entertainment",
+          "Title": "Network and Web Administrator",
+          "Description": "Skill Sets:\n*Global Network and Enterprise Security\n*Web Design and Administration\n*Microsoft Exchange Email System\n*NEC IPS Phone System Administration\n*Help Desk Management\n*Web Development",
+          "From": "12 - 1999",
+          "To": "12 - 2003"
+        },
+        {
+          "Company": "Meridian Healthcare Management",
+          "Title": "Network and Systems Administrator",
+          "Description": "*Network and Exchange Email Administrator\n*Web Design and Administration\n*Technical Support Engineer\n*Avaya Phone System Administration and Support\n",
+          "From": "4 - 1997",
+          "To": "11 - 1999"
+        }
+      ],
+      "skills": [
+        "Information Technology",
+        "Relativity E-discovery System",
+        "Enterprise Cyber Security",
+        "Human Resources Information Systems (HRIS)",
+        "Microsoft Dynamics AX",
+        "Enterprise Resource Planning (ERP)",
+        "Project Management",
+        "Management",
+        "SAP Success Factor System",
+        "Networking"
+      ],
+      "schools": []
+    },
+    "My Notes": []
+  }
+}

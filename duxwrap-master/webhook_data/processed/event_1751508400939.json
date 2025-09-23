@@ -1,0 +1,22 @@
+{
+  "event_id": "event_1751508400939",
+  "event_type": "visit",
+  "event_name": "completed",
+  "profile_url": "https://www.linkedin.com/in/jane-doe/",
+  "dux_user_id": "test_user_123",
+  "timestamp": "2025-07-02 19:06:40.939284",
+  "raw_data": {
+    "type": "visit",
+    "event": "completed",
+    "profile": "https://www.linkedin.com/in/jane-doe/",
+    "userid": "test_user_123",
+    "data": {
+      "action": "visit",
+      "status": "success",
+      "targeturl": "https://www.linkedin.com/in/jane-doe/",
+      "timestamp": 1751508400935
+    },
+    "timestamp": 1751508400935
+  },
+  "processed": false
+}

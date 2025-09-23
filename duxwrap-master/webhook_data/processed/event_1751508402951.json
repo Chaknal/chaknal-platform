@@ -1,0 +1,22 @@
+{
+  "event_id": "event_1751508402951",
+  "event_type": "connect",
+  "event_name": "accepted",
+  "profile_url": "https://www.linkedin.com/in/alex-smith/",
+  "dux_user_id": "test_user_123",
+  "timestamp": "2025-07-02 19:06:42.951772",
+  "raw_data": {
+    "type": "connect",
+    "event": "accepted",
+    "profile": "https://www.linkedin.com/in/alex-smith/",
+    "userid": "test_user_123",
+    "data": {
+      "action": "connect",
+      "status": "accepted",
+      "targeturl": "https://www.linkedin.com/in/alex-smith/",
+      "timestamp": 1751508402949
+    },
+    "timestamp": 1751508402949
+  },
+  "processed": false
+}

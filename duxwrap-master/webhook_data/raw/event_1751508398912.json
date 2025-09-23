@@ -1,0 +1,12 @@
+{
+  "type": "message",
+  "event": "received",
+  "profile": "https://www.linkedin.com/in/chris-gullo/",
+  "userid": "test_user_123",
+  "data": {
+    "from": "https://www.linkedin.com/in/chris-gullo/",
+    "message": "Hi, thanks for connecting!",
+    "timestamp": 1751508398903
+  },
+  "timestamp": 1751508398903
+}

@@ -1,0 +1,151 @@
+{
+  "userid": "117833704731893145427",
+  "time": "2025-07-03T03:43:33.935Z",
+  "type": "visit",
+  "event": "create",
+  "data": {
+    "id": "id.1542383",
+    "VisitTime": 1751514213070,
+    "Profile": "https://www.linkedin.com/in/trevorseim",
+    "SalesProfile": "https://www.linkedin.com/sales/lead/ACwAAAAXiO8BV9o8E07p-FdIevsVDJHOI2lrN3I,NAME_SEARCH,4-Uw",
+    "RecruiterProfile": "https://www.linkedin.com/talent/profile/ACwAAAAXiO8BV9o8E07p-FdIevsVDJHOI2lrN3I",
+    "Picture": "https://media.licdn.com/dms/image/v2/C5603AQFQwenPVgog1Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1591317179314?e=1756944000&v=beta&t=eSKRJYS3vUMpaqHERbZDSa1-I15vAIuPIStNbEEjfxw",
+    "Degree": "1",
+    "First Name": "Trevor",
+    "Middle Name": "",
+    "Last Name": "Seim",
+    "Connections": "3846",
+    "Summary": "",
+    "From": "2025",
+    "Title": "Head of Global Sales",
+    "Company": "Kognitos",
+    "CompanyProfile": "https://www.linkedin.com/company/76614892/",
+    "CompanyWebsite": "https://www.kognitos.com",
+    "Email": "trevor.seim@gmail.com",
+    "Phone": "",
+    "IM": "",
+    "Twitter": "TrevorSeim",
+    "Location": "Los Angeles, California, United States",
+    "Industry": "Software Development",
+    "My Tags": [],
+    "extended": {
+      "positions": [
+        {
+          "Company": "Kognitos",
+          "Title": "Head of Global Sales",
+          "Description": "",
+          "From": "2025",
+          "To": ""
+        },
+        {
+          "Company": "Ignyte Technology",
+          "Title": "Consultant  @ Ignyte Technology",
+          "Description": "",
+          "From": "8 - 2023",
+          "To": ""
+        },
+        {
+          "Company": "Alcion",
+          "Title": "Head of Sales and Partnerships",
+          "Description": "",
+          "From": "5 - 2024",
+          "To": "5 - 2025"
+        },
+        {
+          "Company": "Veza",
+          "Title": "Vice President",
+          "Description": "",
+          "From": "8 - 2022",
+          "To": "7 - 2023"
+        },
+        {
+          "Company": "Kasten",
+          "Title": "Vice President WW Sales",
+          "Description": "Kastens' K10 platform provides cloud native applications robust Data Protection, Migration and DR options while significantly reducing operational lift and management efforts ",
+          "From": "3 - 2020",
+          "To": "9 - 2022"
+        },
+        {
+          "Company": "Cohesity",
+          "Title": "Southwest Area Manager",
+          "Description": "",
+          "From": "1 - 2017",
+          "To": "3 - 2020"
+        },
+        {
+          "Company": "Dell EMC",
+          "Title": "Northwest Area Manager",
+          "Description": "Dell EMC is the global leader enabling businesses and service providers to transform their IT operations and deliver information technology as a service (ITaaS). Fundamental to this transformation is cloud computing. Through innovative products and services, Dell EMC accelerates the journey to cloud computing, helping IT departments to store, manage, analyze and protect their most valuable assets \"data\" in a more agile, trusted and cost-efficient way.\n\nThe Data Protection Solutions Division helps our clients develop and deploy data protection strategies for disaster recovery, business continuity, and archive. \n\nSales Manager- Teams located in California, Oregon, Washington\n\u2022 Team is out pacing Quota @ 123% over Achievement in 2016\n\u2022 122% 2015\n\u2022 107%  2014\n\u2022 154% of goal in 2013  \n\u2022 41% Y/Y Business Growth in 2013\n\u2022 118% of goal in 2012\n\u2022 38% Y/Y Business Growth in 2012\n\u2022 108% of goal in 2011\n\u2022 53% Y/Y Business Growth 2011",
+          "From": "11 - 2010",
+          "To": "2 - 2017"
+        },
+        {
+          "Company": "Symantec",
+          "Title": "Account Executive",
+          "Description": "* Large Enterprise Account Executive\n* Participant Club/ Chairmans Circle\n* Revenue Growth of 2007 110%/ 2008 138%",
+          "From": "8 - 2006",
+          "To": "11 - 2010"
+        },
+        {
+          "Company": "Sun Microsystems",
+          "Title": "Account Executive",
+          "Description": "Relationship Executive, covering Chicago Loop.  Realized 160% Growth, and attained 140% of Quota. Captured 13.9 Million in Revenue.\n\nStrategic Consulting, to map technology solutions back to the business",
+          "From": "1 - 2004",
+          "To": "8 - 2006"
+        }
+      ],
+      "skills": [
+        "Sales Management",
+        "Product Management",
+        "Sales Operations",
+        "SaaS",
+        "Cloud Computing",
+        "Business Continuity",
+        "Channel Partners",
+        "Salesforce.com",
+        "Solution Selling",
+        "Business Development",
+        "Managed Services",
+        "PaaS",
+        "Enterprise Software",
+        "Management",
+        "Storage Area Networks",
+        "Product Marketing",
+        "Selling",
+        "Disaster Recovery",
+        "Professional Services",
+        "Direct Sales",
+        "Data Center",
+        "Sales Enablement",
+        "Leadership",
+        "Sales Process",
+        "Virtualization",
+        "Unified Communications",
+        "Account Management",
+        "Storage",
+        "Sales",
+        "Security",
+        "Deduplication",
+        "Go-to-market Strategy",
+        "Partner Management",
+        "Channel",
+        "Information Technology",
+        "Pre-sales",
+        "Lead Generation",
+        "Strategic Partnerships",
+        "Enterprise Storage",
+        "CRM",
+        "Business Alliances"
+      ],
+      "schools": [
+        {
+          "Degree": "BS",
+          "Field": "Business, Biology",
+          "From": "1993",
+          "To": "1997"
+        }
+      ]
+    },
+    "My Notes": []
+  }
+}

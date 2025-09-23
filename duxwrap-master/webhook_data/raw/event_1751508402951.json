@@ -1,0 +1,13 @@
+{
+  "type": "connect",
+  "event": "accepted",
+  "profile": "https://www.linkedin.com/in/alex-smith/",
+  "userid": "test_user_123",
+  "data": {
+    "action": "connect",
+    "status": "accepted",
+    "targeturl": "https://www.linkedin.com/in/alex-smith/",
+    "timestamp": 1751508402949
+  },
+  "timestamp": 1751508402949
+}

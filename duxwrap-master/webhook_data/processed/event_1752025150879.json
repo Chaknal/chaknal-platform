@@ -1,0 +1,22 @@
+{
+  "event_id": "event_1752025150879",
+  "event_type": "message",
+  "event_name": "received",
+  "profile_url": "https://www.linkedin.com/in/brianbirkett/",
+  "dux_user_id": "117833704731893145427",
+  "timestamp": "2025-07-08 18:39:10.879954",
+  "raw_data": {
+    "type": "message",
+    "event": "received",
+    "profile": "https://www.linkedin.com/in/brianbirkett/",
+    "userid": "117833704731893145427",
+    "api_key": "e96sH0Qehcqk8LWsyNjJpr9OL9qzasXR",
+    "data": {
+      "from": "https://www.linkedin.com/in/brianbirkett/",
+      "message": "Thanks for connecting! I'd love to learn more about your work.",
+      "timestamp": 1752025150877
+    },
+    "timestamp": 1752025150877
+  },
+  "processed": false
+}

@@ -1,0 +1,13 @@
+{
+  "type": "action",
+  "event": "completed",
+  "profile": "https://www.linkedin.com/in/sergio-campos/",
+  "userid": "test_user_123",
+  "data": {
+    "action": "connect",
+    "status": "success",
+    "targeturl": "https://www.linkedin.com/in/sergio-campos/",
+    "timestamp": 1751508399919
+  },
+  "timestamp": 1751508399919
+}
