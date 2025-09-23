@@ -1,0 +1,61 @@
+name: Deploy Chaknal Platform
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy-backend:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run tests
+      run: |
+        pytest tests/ -v
+    
+    - name: Deploy to Azure
+      if: github.ref == 'refs/heads/main'
+      run: |
+        echo "Deploying to Azure App Service..."
+        # Add Azure deployment steps here
+
+  deploy-frontend:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+        cache: 'npm'
+        cache-dependency-path: frontend/package-lock.json
+    
+    - name: Install dependencies
+      working-directory: ./frontend
+      run: npm ci
+    
+    - name: Build frontend
+      working-directory: ./frontend
+      run: npm run build
+    
+    - name: Deploy to Azure Static Web Apps
+      if: github.ref == 'refs/heads/main'
+      run: |
+        echo "Deploying frontend to Azure Static Web Apps..."
+        # Add Azure Static Web Apps deployment steps here
