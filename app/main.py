@@ -15,7 +15,7 @@ from datetime import datetime
 from app.api.campaigns_new import router as campaigns_router
 from app.api.contacts_new import router as contacts_router
 from app.api.messages_new import router as messages_router
-from app.api.contact_import import router as contact_import_router
+from app.api.contact_import_new import router as contact_import_router
 
 # Configure logging
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
