@@ -54,10 +54,7 @@ jobs:
     
     - name: Build frontend
       working-directory: ./chaknal-frontend
-      run: npm run build
-      env:
-        REACT_APP_API_BASE_URL: https://chaknal-backend-container.azurewebsites.net
-        REACT_APP_ENVIRONMENT: production
+      run: npm run build:production
     
     - name: Deploy to Azure Static Web Apps
       if: github.ref == 'refs/heads/main'
