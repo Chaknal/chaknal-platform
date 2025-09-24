@@ -12,10 +12,7 @@ import logging
 from datetime import datetime
 
 # Import the rebuilt API routers
-from app.api.campaigns_new import router as campaigns_router
-from app.api.contacts_new import router as contacts_router
-from app.api.messages_new import router as messages_router
-from app.api.minimal_test import router as minimal_test_router
+from app.api.simple_test import router as simple_test_router
 
 # Configure logging
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
@@ -67,10 +64,7 @@ async def health():
     }
 
 # Include the rebuilt API routers
-app.include_router(campaigns_router, prefix="/api", tags=["Campaigns"])
-app.include_router(contacts_router, prefix="/api", tags=["Contacts"])
-app.include_router(messages_router, prefix="/api", tags=["Messages"])
-app.include_router(minimal_test_router, prefix="/api", tags=["Test"])
+app.include_router(simple_test_router, prefix="/api", tags=["Test"])
 
 # Error handlers
 @app.exception_handler(404)
