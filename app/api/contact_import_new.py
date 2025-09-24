@@ -7,11 +7,11 @@ from fastapi import APIRouter, HTTPException, Depends, UploadFile, File, Form
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from typing import List, Optional, Dict, Any
-import pandas as pd
 import uuid
 from datetime import datetime
 import json
 import io
+import csv
 
 from database.database import get_session
 from app.models.campaign import Campaign
@@ -76,11 +76,13 @@ async def preview_import(
         
         # Determine file type and read
         if file.filename.endswith('.csv'):
-            df = pd.read_csv(io.StringIO(content.decode('utf-8')))
+            csv_content = content.decode('utf-8')
+            csv_reader = csv.DictReader(io.StringIO(csv_content))
+            rows = list(csv_reader)
         elif file.filename.endswith(('.xlsx', '.xls')):
-            df = pd.read_excel(io.BytesIO(content))
+            raise HTTPException(status_code=400, detail="Excel files not supported in this version. Use CSV format.")
         else:
-            raise HTTPException(status_code=400, detail="Unsupported file format. Use CSV or Excel.")
+            raise HTTPException(status_code=400, detail="Unsupported file format. Use CSV format.")
         
         # Get field mapping
         if field_mapping:
@@ -89,21 +91,21 @@ async def preview_import(
             mapping = SOURCE_MAPPINGS[source]
         else:
             # For custom source, create a direct mapping
-            mapping = {field: field for field in df.columns}
+            mapping = {field: field for field in csv_reader.fieldnames}
         
         # Preview first 10 rows
         preview_data = []
-        for index, row in df.head(10).iterrows():
+        for i, row in enumerate(rows[:10]):
             mapped_row = {}
             for source_field, target_field in mapping.items():
-                if source_field in row and pd.notna(row[source_field]):
+                if source_field in row and row[source_field] and row[source_field].strip():
                     mapped_row[target_field] = str(row[source_field]).strip()
             preview_data.append(mapped_row)
         
         return {
             "preview": preview_data,
-            "total_rows": len(df),
-            "available_fields": list(df.columns),
+            "total_rows": len(rows),
+            "available_fields": csv_reader.fieldnames,
             "mapping": mapping
         }
         
@@ -134,11 +136,13 @@ async def import_contacts(
         
         # Determine file type and read
         if file.filename.endswith('.csv'):
-            df = pd.read_csv(io.StringIO(content.decode('utf-8')))
+            csv_content = content.decode('utf-8')
+            csv_reader = csv.DictReader(io.StringIO(csv_content))
+            rows = list(csv_reader)
         elif file.filename.endswith(('.xlsx', '.xls')):
-            df = pd.read_excel(io.BytesIO(content))
+            raise HTTPException(status_code=400, detail="Excel files not supported in this version. Use CSV format.")
         else:
-            raise HTTPException(status_code=400, detail="Unsupported file format. Use CSV or Excel.")
+            raise HTTPException(status_code=400, detail="Unsupported file format. Use CSV format.")
         
         # Get field mapping
         if field_mapping:
@@ -147,19 +151,19 @@ async def import_contacts(
             mapping = SOURCE_MAPPINGS[source]
         else:
             # For custom source, create a direct mapping
-            mapping = {field: field for field in df.columns}
+            mapping = {field: field for field in csv_reader.fieldnames}
         
         # Process contacts
         import_batch_id = str(uuid.uuid4())
         processed_contacts = []
         errors = []
         
-        for index, row in df.iterrows():
+        for index, row in enumerate(rows):
             try:
                 # Map fields
                 contact_data = {}
                 for source_field, target_field in mapping.items():
-                    if source_field in row and pd.notna(row[source_field]):
+                    if source_field in row and row[source_field] and row[source_field].strip():
                         value = row[source_field]
                         if value is not None:
                             contact_data[target_field] = str(value).strip()
