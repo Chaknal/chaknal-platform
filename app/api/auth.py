@@ -4,7 +4,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from database.database import async_session_maker
 from app.models.user import User
 from app.auth.jwt_handler import create_access_token, get_current_user
-from app.auth.google_oauth import get_google_oauth_router
+# from app.auth.google_oauth import get_google_oauth_router  # Temporarily disabled
 from config.oauth_config import OAuthConfig
 from pydantic import BaseModel
 from typing import List
