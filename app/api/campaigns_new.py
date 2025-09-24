@@ -55,13 +55,44 @@ class CampaignResponse(BaseModel):
     updated_at: datetime
     status: str = "active"
 
-# In-memory storage for now (we'll connect to database later)
-campaigns_db = []
+# Database storage - we'll use the actual database
 
 @router.get("/campaigns/", response_model=List[CampaignResponse])
-async def get_campaigns():
-    """Get all campaigns"""
-    return campaigns_db
+async def get_campaigns(session: AsyncSession = Depends(get_session)):
+    """Get all campaigns from database"""
+    from app.models.campaign import Campaign
+    result = await session.execute(select(Campaign))
+    campaigns = result.scalars().all()
+    
+    # Convert to response format
+    campaign_responses = []
+    for campaign in campaigns:
+        campaign_responses.append(CampaignResponse(
+            id=campaign.id,
+            campaign_id=campaign.id,
+            title=campaign.title,
+            name=getattr(campaign, 'name', campaign.title),
+            description=getattr(campaign, 'description', None),
+            industry=getattr(campaign, 'industry', None),
+            target_audience=getattr(campaign, 'target_audience', None),
+            target_title=getattr(campaign, 'target_title', None),
+            intent=getattr(campaign, 'intent', None),
+            dux_user_id=getattr(campaign, 'dux_user_id', None),
+            initial_action=getattr(campaign, 'initial_action', None),
+            initial_message=getattr(campaign, 'initial_message', None),
+            initial_subject=getattr(campaign, 'initial_subject', None),
+            follow_up_actions=getattr(campaign, 'follow_up_actions', None),
+            delay_days=getattr(campaign, 'delay_days', None),
+            random_delay=getattr(campaign, 'random_delay', None),
+            start_date=getattr(campaign, 'start_date', None),
+            end_date=getattr(campaign, 'end_date', None),
+            scheduled_start=getattr(campaign, 'scheduled_start', None),
+            created_at=campaign.created_at,
+            updated_at=campaign.updated_at,
+            status=getattr(campaign, 'status', 'active')
+        ))
+    
+    return campaign_responses
 
 @router.post("/campaigns/", response_model=CampaignResponse)
 async def create_campaign(campaign: CampaignCreate):
