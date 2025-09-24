@@ -16,6 +16,7 @@ from app.api.campaigns_new import router as campaigns_router
 from app.api.contacts_new import router as contacts_router
 from app.api.messages_new import router as messages_router
 from app.api.contact_import_new import router as contact_import_router
+from app.api.simple_contact_import import router as simple_contact_import_router
 from app.api.test_contact_import import router as test_contact_import_router
 
 # Configure logging
@@ -72,6 +73,7 @@ app.include_router(campaigns_router, prefix="/api", tags=["Campaigns"])
 app.include_router(contacts_router, prefix="/api", tags=["Contacts"])
 app.include_router(messages_router, prefix="/api", tags=["Messages"])
 app.include_router(contact_import_router, prefix="/api", tags=["Contact Import"])
+app.include_router(simple_contact_import_router, prefix="/api", tags=["Simple Contact Import"])
 app.include_router(test_contact_import_router, prefix="/api", tags=["Test"])
 
 # Error handlers
