@@ -8,6 +8,9 @@ from typing import List, Optional
 from pydantic import BaseModel
 from datetime import datetime
 import uuid
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import select
+from database.database import get_session
 
 router = APIRouter()
 
