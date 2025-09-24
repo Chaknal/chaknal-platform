@@ -14,20 +14,43 @@ router = APIRouter()
 # Pydantic models
 class CampaignCreate(BaseModel):
     title: str
+    name: Optional[str] = None
     description: Optional[str] = None
     industry: Optional[str] = None
     target_audience: Optional[str] = None
+    target_title: Optional[str] = None
+    intent: Optional[str] = None
+    dux_user_id: Optional[str] = None
+    initial_action: Optional[str] = None
+    initial_message: Optional[str] = None
+    initial_subject: Optional[str] = None
+    follow_up_actions: Optional[list] = None
+    delay_days: Optional[int] = None
+    random_delay: Optional[bool] = None
     start_date: Optional[datetime] = None
     end_date: Optional[datetime] = None
+    scheduled_start: Optional[datetime] = None
 
 class CampaignResponse(BaseModel):
     id: str
+    campaign_id: str  # Alias for frontend compatibility
     title: str
+    name: Optional[str] = None  # Frontend expects 'name' field
     description: Optional[str] = None
     industry: Optional[str] = None
     target_audience: Optional[str] = None
+    target_title: Optional[str] = None  # Frontend expects 'target_title'
+    intent: Optional[str] = None  # Frontend expects 'intent'
+    dux_user_id: Optional[str] = None  # Frontend expects 'dux_user_id'
+    initial_action: Optional[str] = None  # Frontend expects 'initial_action'
+    initial_message: Optional[str] = None  # Frontend expects 'initial_message'
+    initial_subject: Optional[str] = None  # Frontend expects 'initial_subject'
+    follow_up_actions: Optional[list] = None  # Frontend expects 'follow_up_actions'
+    delay_days: Optional[int] = None  # Frontend expects 'delay_days'
+    random_delay: Optional[bool] = None  # Frontend expects 'random_delay'
     start_date: Optional[datetime] = None
     end_date: Optional[datetime] = None
+    scheduled_start: Optional[datetime] = None  # Frontend expects 'scheduled_start'
     created_at: datetime
     updated_at: datetime
     status: str = "active"
@@ -46,14 +69,29 @@ async def create_campaign(campaign: CampaignCreate):
     campaign_id = str(uuid.uuid4())
     now = datetime.now()
     
+    # Extract additional fields from the request data
+    campaign_dict = campaign.dict() if hasattr(campaign, 'dict') else {}
+    
     new_campaign = CampaignResponse(
         id=campaign_id,
+        campaign_id=campaign_id,  # Alias for frontend compatibility
         title=campaign.title,
+        name=campaign_dict.get('name', campaign.title),  # Use name if provided, otherwise title
         description=campaign.description,
         industry=campaign.industry,
         target_audience=campaign.target_audience,
+        target_title=campaign_dict.get('target_title'),
+        intent=campaign_dict.get('intent'),
+        dux_user_id=campaign_dict.get('dux_user_id'),
+        initial_action=campaign_dict.get('initial_action'),
+        initial_message=campaign_dict.get('initial_message'),
+        initial_subject=campaign_dict.get('initial_subject'),
+        follow_up_actions=campaign_dict.get('follow_up_actions'),
+        delay_days=campaign_dict.get('delay_days'),
+        random_delay=campaign_dict.get('random_delay'),
         start_date=campaign.start_date,
         end_date=campaign.end_date,
+        scheduled_start=campaign_dict.get('scheduled_start'),
         created_at=now,
         updated_at=now,
         status="active"
