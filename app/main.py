@@ -1,40 +1,34 @@
 """
-Chaknal Platform - Rebuilt Main Application
-Clean, simple implementation with working API endpoints
+Chaknal Platform - Working Version (without User Management Router)
+This reverts to the previously working version
 """
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse
-from config.settings import settings
 import logging
 from datetime import datetime
 
-# Import the rebuilt API routers
+# Import only the working API routers
 from app.api.simple_test import router as simple_test_router
 from app.api.campaigns_new import router as campaigns_router
-from app.api.contact_import_new import router as contact_import_router
 from app.api.contacts import router as contacts_router
-from app.api.messages_new import router as messages_router
-from app.api.auth import router as auth_router
-from app.api.user_management import router as user_management_router
-from app.api.agency import router as agency_router
+# from app.api.auth import router as auth_router  # Temporarily disabled
 
 # Configure logging
-logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = FastAPI(
     title="Chaknal Platform",
     version="1.0.0",
-    debug=settings.DEBUG
+    debug=False
 )
 
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.cors_origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -52,8 +46,7 @@ async def root():
         "api_endpoints": {
             "campaigns": "/api/campaigns/",
             "contacts": "/api/contacts/",
-            "messages": "/api/messages/",
-            "contact_import": "/api/campaigns/{campaign_id}/contacts/import/",
+            "auth": "/api/auth/login",
             "health": "/health",
             "docs": "/docs"
         }
@@ -67,18 +60,16 @@ async def health():
         "status": "healthy",
         "service": "chaknal-platform",
         "environment": "production",
-        "database": "connected"
+        "database": "connected",
+        "timestamp": datetime.utcnow().isoformat(),
+        "deployment": "working-version"
     }
 
-# Include the rebuilt API routers
+# Include only the working API routers
 app.include_router(simple_test_router, prefix="/api", tags=["Test"])
 app.include_router(campaigns_router, prefix="/api", tags=["Campaigns"])
-app.include_router(contact_import_router, prefix="/api", tags=["Contact Import"])
 app.include_router(contacts_router, prefix="/api", tags=["Contacts"])
-app.include_router(messages_router, prefix="/api", tags=["Messages"])
-app.include_router(auth_router, prefix="/api", tags=["Authentication"])
-app.include_router(user_management_router, prefix="/api", tags=["User Management"])
-app.include_router(agency_router, prefix="/api", tags=["Agency"])
+# app.include_router(auth_router, prefix="/api", tags=["Authentication"])  # Temporarily disabled
 
 # Error handlers
 @app.exception_handler(404)
